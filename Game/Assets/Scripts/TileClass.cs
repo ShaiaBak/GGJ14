@@ -8,7 +8,7 @@ public class TileClass : MonoBehaviour {
 
 	public const int NORTH = 0, EAST = 1, SOUTH = 2, WEST = 3;
 
-	public int getOppositeDirection(int direction) {
+	public static int getOppositeDirection(int direction) {
 		return (direction + 2) % 4;
 	}
 
@@ -17,7 +17,11 @@ public class TileClass : MonoBehaviour {
 		walls = new GameObject[4];
 	}
 
-	public void SetWall(int direction, GameObject wall){
+	public GameObject GetWall(int direction) {
+		return walls[direction];
+	}
+
+	public void SetWall(int direction, GameObject wall) {
 		walls[direction] = wall;
 	}
 	
