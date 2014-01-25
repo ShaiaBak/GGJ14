@@ -80,12 +80,17 @@ public class GameboardController : MonoBehaviour {
 	public void AttackTile(GameObject tile){
 		TileClass tc = tile.GetComponent<TileClass>();
 		if(tc != null){
-			Destroy(tc.entity);		// TODO: replace with kill function in CharacterClass
+			if(tc.entity != null){
+				CharacterClass cc = tc.entity.GetComponent<CharacterClass>();
+				if(cc != null){
+					cc.Die();
+				}
+			}
 		}
 	}
 
 	public void AttackTile(int x, int y){
-		AttackTile(tileArray[x,y]);
+		AttackTile(GetTileAtCoordinate(x,y));
 	}
 
 	public GameObject GetTileAtCoordinate(int x, int y){
