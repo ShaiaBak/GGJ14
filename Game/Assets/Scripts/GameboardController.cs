@@ -53,5 +53,9 @@ public class GameboardController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	public GameObject GetTileAtCoordinate(int x, int y){
+		return null;
+	}
 	
 }
