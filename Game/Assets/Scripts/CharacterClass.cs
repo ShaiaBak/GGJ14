@@ -61,6 +61,6 @@ public class CharacterClass : MonoBehaviour {
 	}
 
 	public void Die() {
-		//todo kill self
+		Destroy (gameObject);
 	}
 }
