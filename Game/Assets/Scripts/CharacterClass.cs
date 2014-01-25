@@ -12,10 +12,6 @@ public class CharacterClass : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		int x = (int) transform.position.x;
-		int y = (int) transform.position.y;
-		int direction = -1;
-
 		if(Input.GetButtonDown("P1_Choose2")){	// up
 			Move (TileClass.NORTH);
 		}else if(Input.GetButtonDown("P1_Choose4")){	// left
@@ -58,8 +54,11 @@ public class CharacterClass : MonoBehaviour {
 		}
 		
 		if (currentTile != null && !currentTile.HasWall (direction) && nextTile != null && !nextTile.HasEntity()) {
-			// todo check other tile for existing character
 			transform.position = new Vector2 (x,y);
 		}
+	}
+
+	public void Die() {
+		//todo kill self
 	}
 }

@@ -31,6 +31,6 @@ public class TileClass : MonoBehaviour {
 	}
 
 	public bool HasEntity() {
-		return false;
+		return entity != null;
 	}
 }
