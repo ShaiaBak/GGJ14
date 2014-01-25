@@ -70,11 +70,22 @@ public class GameboardController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
-	public void moveCharacter(GameObject player, int direction) {
+	public void MoveCharacter(GameObject player, int direction) {
 		player.GetComponent<CharacterClass>().Move(direction);
+	}
+
+	public void AttackTile(GameObject tile){
+		TileClass tc = tile.GetComponent<TileClass>();
+		if(tc != null){
+			Destroy(tc.entity);		// TODO: replace with kill function in CharacterClass
+		}
+	}
+
+	public void AttackTile(int x, int y){
+		AttackTile(tileArray[x,y]);
 	}
 
 	public GameObject GetTileAtCoordinate(int x, int y){

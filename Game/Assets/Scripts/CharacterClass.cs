@@ -55,6 +55,8 @@ public class CharacterClass : MonoBehaviour {
 		
 		if (currentTile != null && !currentTile.HasWall (direction) && nextTile != null && !nextTile.HasEntity()) {
 			transform.position = new Vector2 (x,y);
+			currentTile.entity = null;
+			nextTile.entity = gameObject;
 		}
 	}
 
