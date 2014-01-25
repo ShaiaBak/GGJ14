@@ -55,7 +55,13 @@ public class GameboardController : MonoBehaviour {
 	}
 
 	public GameObject GetTileAtCoordinate(int x, int y){
-		return null;
+		if (x < 0 || y < 0 || x > 1000 || y > 1000) {
+			return null;
+		}
+
+		return tileArray [x, y];
 	}
-	
+	public GameObject GetTileAtCoordinate(float x, float y){
+		return GetTileAtCoordinate ((int)x, (int)y);
+	}
 }

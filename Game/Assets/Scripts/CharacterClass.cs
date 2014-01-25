@@ -12,16 +12,40 @@ public class CharacterClass : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown("P1_Choose2")){	// up
+		int x = (int) transform.position.x;
+		int y = (int) transform.position.y;
+		int direction = -1;
 
-			transform.position = new Vector2(transform.position.x, transform.position.y + 1);
+		if(Input.GetButtonDown("P1_Choose2")){	// up
+			y++;
+			direction = TileClass.NORTH;
 		}else if(Input.GetButtonDown("P1_Choose4")){	// left
-			transform.position = new Vector2(transform.position.x - 1, transform.position.y);
+			x--;
+			direction = TileClass.WEST;
 		}else if(Input.GetButtonDown("P1_Choose5")){	// down
-			transform.position = new Vector2(transform.position.x, transform.position.y - 1);
+			y--;
+			direction = TileClass.SOUTH;
 		}else if(Input.GetButtonDown("P1_Choose6")){	// right
-			transform.position = new Vector3(transform.position.x + 1,transform.position.y);
+			x++;
+			direction = TileClass.EAST;
 		}
 
+		if (direction >= 0 && direction < 4) {
+			GameObject obj = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y);
+			TileClass currentTile = null;
+			if (obj != null) {
+				currentTile = obj.GetComponent<TileClass>();
+			}
+			obj = gameboard.GetTileAtCoordinate(x, y);
+			TileClass nextTile = null;
+			if (obj != null) {
+				nextTile = obj.GetComponent<TileClass>();
+			}
+			
+			if (currentTile != null && !currentTile.hasWall (direction)) {
+				// todo check other tile for existing character
+				transform.position = new Vector2 (x,y);
+			}
+		}
 	}
 }

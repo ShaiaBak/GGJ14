@@ -8,6 +8,10 @@ public class TileClass : MonoBehaviour {
 
 	public const int NORTH = 0, EAST = 1, SOUTH = 2, WEST = 3;
 
+	public int getOppositeDirection(int direction) {
+		return (direction + 2) % 4;
+	}
+
 	// Use this for initialization
 	void Awake () {
 		walls = new GameObject[4];
@@ -22,4 +26,7 @@ public class TileClass : MonoBehaviour {
 	
 	}
 
+	public bool hasWall(int direction) {
+		return walls [direction] != null;
+	}
 }
