@@ -26,7 +26,11 @@ public class TileClass : MonoBehaviour {
 	
 	}
 
-	public bool hasWall(int direction) {
+	public bool HasWall(int direction) {
 		return walls [direction] != null;
+	}
+
+	public bool HasEntity() {
+		return false;
 	}
 }

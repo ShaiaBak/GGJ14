@@ -4,21 +4,40 @@ using System.Collections;
 public class GameboardController : MonoBehaviour {
 
 	private GameObject[,] tileArray;
+	private int width;
+	private int height;
 
 	// Use this for initialization
 	void Start () {
-		tileArray = new GameObject[1000,1000];
+		width = 0;
+		height = 0;
 		GameObject[] array = GameObject.FindGameObjectsWithTag("Tile");
+		foreach (GameObject o in array) {
+			int x = (int) o.transform.position.x;
+			int y = (int) o.transform.position.y;
+			if (width < x) {
+				width = x;
+			}
+			if (height < y) {
+				height = y;
+			}
+		}
+		// width = max index + 1
+		width++;
+		height++;
+
+		tileArray = new GameObject[width, height];
 		foreach(GameObject o in array){
 			int x = (int) o.transform.position.x;
 			int y = (int) o.transform.position.y;
 			tileArray[x,y] = o;
 		}
 
-		array = GameObject.FindGameObjectsWithTag ("Wall");
+		array = GameObject.FindGameObjectsWithTag("Wall");
 		foreach(GameObject o in array){
 			float x = o.transform.position.x;
 			float y = o.transform.position.y;
+
 
 			if (Mathf.FloorToInt(x) == Mathf.CeilToInt(x)){
 				// is a horizontal wall
@@ -54,11 +73,14 @@ public class GameboardController : MonoBehaviour {
 	
 	}
 
+	public void moveCharacter(GameObject player, int direction) {
+		player.GetComponent<CharacterClass>().Move(direction);
+	}
+
 	public GameObject GetTileAtCoordinate(int x, int y){
-		if (x < 0 || y < 0 || x > 1000 || y > 1000) {
+		if (x < 0 || y < 0 || x >= width || y >= height) {
 			return null;
 		}
-
 		return tileArray [x, y];
 	}
 	public GameObject GetTileAtCoordinate(float x, float y){
