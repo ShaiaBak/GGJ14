@@ -10,40 +10,40 @@ public class GameboardController : MonoBehaviour {
 		tileArray = new GameObject[1000,1000];
 		GameObject[] array = GameObject.FindGameObjectsWithTag("Tile");
 		foreach(GameObject o in array){
-			int x = (int) o.transform.localPosition.x;
-			int z = (int) o.transform.localPosition.z;
-			tileArray[x,z] = o;
+			int x = (int) o.transform.position.x;
+			int y = (int) o.transform.position.y;
+			tileArray[x,y] = o;
 		}
 
 		array = GameObject.FindGameObjectsWithTag ("Wall");
 		foreach(GameObject o in array){
-			float x = o.transform.localPosition.x;
-			float z = o.transform.localPosition.z;
+			float x = o.transform.position.x;
+			float y = o.transform.position.y;
 
 			if (Mathf.FloorToInt(x) == Mathf.CeilToInt(x)){
 				// is a horizontal wall
-				int zdn = Mathf.FloorToInt(z);
-				int zup = Mathf.CeilToInt(z);
-				if (zdn >= 0) {
-//					print ("Tile (" + (int)x + "," + zdn + ") add north wall");
-					tileArray[(int) x, zdn].GetComponent<TileClass>().SetWall(TileClass.NORTH, o);
+				int ydn = Mathf.FloorToInt(y);
+				int yup = Mathf.CeilToInt(y);
+				if (ydn >= 0) {
+//					print ("Tile (" + (int)x + "," + ydn + ") add north wall");
+					tileArray[(int) x, ydn].GetComponent<TileClass>().SetWall(TileClass.NORTH, o);
 				}
-				if (zup < 1000) {
-//					print ("Tile (" + (int)x + "," + zup + ") add south wall");
-					tileArray[(int) x, zup].GetComponent<TileClass>().SetWall(TileClass.SOUTH, o);
+				if (yup < 1000) {
+//					print ("Tile (" + (int)x + "," + yup + ") add south wall");
+					tileArray[(int) x, yup].GetComponent<TileClass>().SetWall(TileClass.SOUTH, o);
 				}
 			}
-			else if (Mathf.FloorToInt(z) == Mathf.CeilToInt(z)){
+			else if (Mathf.FloorToInt(y) == Mathf.CeilToInt(y)){
 				// is a vertical wall
 				int xdn = Mathf.FloorToInt(x);
 				int xup = Mathf.CeilToInt(x);
 				if (xdn >= 0) {
-//					print ("Tile (" + xdn + "," + (int)z + ") add east wall");
-					tileArray[xdn, (int) z].GetComponent<TileClass>().SetWall(TileClass.EAST, o);
+//					print ("Tile (" + xdn + "," + (int)y + ") add east wall");
+					tileArray[xdn, (int) y].GetComponent<TileClass>().SetWall(TileClass.EAST, o);
 				}
 				if (xup < 1000) {
-//					print ("Tile (" + xup + "," + (int)z + ") add west wall");
-					tileArray[xup, (int) z].GetComponent<TileClass>().SetWall(TileClass.WEST, o);
+//					print ("Tile (" + xup + "," + (int)y + ") add west wall");
+					tileArray[xup, (int) y].GetComponent<TileClass>().SetWall(TileClass.WEST, o);
 				}
 			}
 		}
