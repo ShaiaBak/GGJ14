@@ -3,11 +3,17 @@ using System.Collections;
 
 public class CharacterClass : MonoBehaviour {
 
+	[SerializeField]
 	private GameboardController gameboard;
 
 	// Use this for initialization
 	void Start () {
 		gameboard = GameObject.FindGameObjectWithTag("Gameboard").GetComponent<GameboardController>();
+		// Set the reference of the tile to the entity on top
+		GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y);
+		if(tile != null){
+			tile.GetComponent<TileClass>().entity = gameObject;
+		}
 	}
 	
 	// Update is called once per frame

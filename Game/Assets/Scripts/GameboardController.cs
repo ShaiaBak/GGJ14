@@ -8,7 +8,7 @@ public class GameboardController : MonoBehaviour {
 	private int height;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		width = 0;
 		height = 0;
 		GameObject[] array = GameObject.FindGameObjectsWithTag("Tile");
@@ -77,11 +77,15 @@ public class GameboardController : MonoBehaviour {
 	}
 
 	public void AttackTile(GameObject tile){
+		if(tile == null){
+			return;
+		}
 		TileClass tc = tile.GetComponent<TileClass>();
 		if(tc != null){
 			if(tc.entity != null){
+				// Check if the entity on the tile is a character
 				CharacterClass cc = tc.entity.GetComponent<CharacterClass>();
-				if(cc != null){
+				if(cc != null && tc.entity.tag == "Player"){
 					cc.Die();
 				}
 			}
