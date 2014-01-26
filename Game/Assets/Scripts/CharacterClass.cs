@@ -67,8 +67,8 @@ public class CharacterClass : MonoBehaviour {
 	}
 
 	public void Die() {
-		Animator animator = GetComponent<Animator>();
-		animator.SetTrigger("Die");
+		//Animator animator = GetComponent<Animator>();
+		//animator.SetTrigger("Die");
 
 		Destroy (gameObject);
 	}
