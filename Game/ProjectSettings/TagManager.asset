@@ -6,7 +6,9 @@ TagManager:
   - Gameboard
   - Tile
   - Wall
-  - 
+  - Character
+  - P1
+  - P2
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

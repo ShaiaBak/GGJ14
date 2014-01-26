@@ -2,12 +2,13 @@
 using System.Collections;
 
 public class CharacterClass : MonoBehaviour {
-
-	[SerializeField]
+	
 	private GameboardController gameboard;
+	private Animator anim;
 
 	// Use this for initialization
 	void Start () {
+		anim = GetComponent<Animator>();
 		gameboard = GameObject.FindGameObjectWithTag("Gameboard").GetComponent<GameboardController>();
 		// Set the reference of the tile to the entity on top
 		GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y);
@@ -67,9 +68,12 @@ public class CharacterClass : MonoBehaviour {
 	}
 
 	public void Die() {
-		//Animator animator = GetComponent<Animator>();
-		//animator.SetTrigger("Die");
-
-		Destroy (gameObject);
+		anim.SetTrigger("Death");
+		foreach(MonoBehaviour mb in GetComponents<MonoBehaviour>()){
+			Destroy(mb);
+		}
+		tag = "Untagged";
+		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
+//		Destroy (gameObject);
 	}
 }

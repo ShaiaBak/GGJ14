@@ -2398,6 +2398,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 901b95a5cda8d2a4da8d94310980ba0a, type: 2}
+      propertyPath: m_TagString
+      value: P1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 901b95a5cda8d2a4da8d94310980ba0a, type: 2}
   m_RootGameObject: {fileID: 888215078}
@@ -2980,10 +2984,6 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 901b95a5cda8d2a4da8d94310980ba0a, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 901b95a5cda8d2a4da8d94310980ba0a, type: 2}
       propertyPath: m_Name
       value: Character03
       objectReference: {fileID: 0}
@@ -3481,9 +3481,10 @@ GameObject:
   - 212: {fileID: 888215079}
   - 114: {fileID: 888215081}
   - 114: {fileID: 888215082}
+  - 95: {fileID: 888215083}
   m_Layer: 0
   m_Name: Character01
-  m_TagString: Player
+  m_TagString: P1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3535,7 +3536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a722965b6cffe46b387f2ba1cf585c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameboard: {fileID: 0}
 --- !u!114 &888215082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3548,6 +3548,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a536d7eec7845647896c4710a4a331a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &888215083
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 901b95a5cda8d2a4da8d94310980ba0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 511925295}
+  m_GameObject: {fileID: 888215078}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d286e84318e5784db5de01b96810d79, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &898102204
 Prefab:
   m_ObjectHideFlags: 0
@@ -3766,9 +3781,10 @@ GameObject:
   - 212: {fileID: 977476861}
   - 114: {fileID: 977476860}
   - 114: {fileID: 977476859}
+  - 95: {fileID: 977476862}
   m_Layer: 0
   m_Name: Character03
-  m_TagString: Player
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3808,7 +3824,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a722965b6cffe46b387f2ba1cf585c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameboard: {fileID: 0}
 --- !u!212 &977476861
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3833,6 +3848,21 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 19852ca5a0c2a664890ac55b4dea4e00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &977476862
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 901b95a5cda8d2a4da8d94310980ba0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 765880587}
+  m_GameObject: {fileID: 977476857}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d286e84318e5784db5de01b96810d79, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &978622407
 GameObject:
   m_ObjectHideFlags: 0
@@ -6530,10 +6560,6 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 901b95a5cda8d2a4da8d94310980ba0a, type: 2}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 901b95a5cda8d2a4da8d94310980ba0a, type: 2}
       propertyPath: m_Name
       value: Character02
       objectReference: {fileID: 0}
@@ -7377,9 +7403,10 @@ GameObject:
   - 212: {fileID: 1895356763}
   - 114: {fileID: 1895356762}
   - 114: {fileID: 1895356761}
+  - 95: {fileID: 1895356764}
   m_Layer: 0
   m_Name: Character02
-  m_TagString: Player
+  m_TagString: Character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7419,7 +7446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3a722965b6cffe46b387f2ba1cf585c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameboard: {fileID: 0}
 --- !u!212 &1895356763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7444,6 +7470,21 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_Sprite: {fileID: 21300000, guid: 19852ca5a0c2a664890ac55b4dea4e00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!95 &1895356764
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9500000, guid: 901b95a5cda8d2a4da8d94310980ba0a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1650690741}
+  m_GameObject: {fileID: 1895356759}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d286e84318e5784db5de01b96810d79, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &1895408615
 Prefab:
   m_ObjectHideFlags: 0

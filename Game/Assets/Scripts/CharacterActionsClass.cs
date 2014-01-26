@@ -14,11 +14,11 @@ public class CharacterActionsClass : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetButtonDown("P1_Choose1")){
-//			Swipe();
-			Shoot(TileClass.WEST);
+			Swipe();
+//			Shoot(TileClass.NORTH);
 		}
 		if(Input.GetButtonDown("P1_Choose3")){
-			Shoot(TileClass.SOUTH);
+			Shoot(TileClass.WEST);
 		}
 		if(Input.GetButtonDown("P2_Choose2")){
 			gameboard.CreateWall((int)transform.position.x, (int)transform.position.y, TileClass.NORTH);
@@ -29,19 +29,28 @@ public class CharacterActionsClass : MonoBehaviour {
 	}
 
 	public void Swipe(){
+
 		anim.SetTrigger ("Attack");
 		TileClass tile = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>();
 		if(!tile.HasWall(TileClass.NORTH)){
-			gameboard.AttackTile((int)transform.position.x, (int)transform.position.y+1);
+			Vector3 pos = new Vector2(transform.position.x, transform.position.y+1);
+			gameboard.AttackTile((int)pos.x, (int)pos.y);
+			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.EAST)){
-			gameboard.AttackTile((int)transform.position.x+1, (int)transform.position.y);
+			Vector3 pos = new Vector2(transform.position.x+1, transform.position.y);
+			gameboard.AttackTile((int)pos.x, (int)pos.y);
+			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.SOUTH)){
-			gameboard.AttackTile((int)transform.position.x, (int)transform.position.y-1);
+			Vector3 pos = new Vector2(transform.position.x, transform.position.y-1);
+			gameboard.AttackTile((int)pos.x, (int)pos.y);
+			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.WEST)){
-			gameboard.AttackTile((int)transform.position.x-1, (int)transform.position.y);
+			Vector3 pos = new Vector2(transform.position.x-1, transform.position.y);
+			gameboard.AttackTile((int)pos.x, (int)pos.y);
+			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 
 	}
@@ -51,16 +60,16 @@ public class CharacterActionsClass : MonoBehaviour {
 		switch(direction){
 
 		case TileClass.NORTH:
-			int i = (int) transform.position.y;
+			int i = (int) transform.position.y+1;
 			while(i<gameboard.height){
 				Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3(transform.position.x, i), Quaternion.identity);
 				GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, i);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasEntity() && tc.entity.tag == "Player" && tc.entity != gameObject){
-						tc.entity.GetComponent<CharacterClass>().Die();
+					if(tc.HasWall(TileClass.NORTH) || tc.HasWall(TileClass.SOUTH)){
 						break;
-					}else if(tc.HasWall(TileClass.NORTH)){
+					}
+					if(gameboard.AttackTile(tile)){
 						break;
 					}
 				}
@@ -69,16 +78,16 @@ public class CharacterActionsClass : MonoBehaviour {
 			break;
 	
 		case TileClass.EAST:
-			int j = (int) transform.position.x;
+			int j = (int) transform.position.x+1;
 			while(j<gameboard.width){
 				Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3(j,transform.position.y), Quaternion.identity);
 				GameObject tile = gameboard.GetTileAtCoordinate(j,transform.position.y);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasEntity() && tc.entity.tag == "Player" && tc.entity != gameObject){
-						tc.entity.GetComponent<CharacterClass>().Die();
+					if(tc.HasWall(TileClass.EAST) || tc.HasWall(TileClass.WEST)){
 						break;
-					}else if(tc.HasWall(TileClass.EAST)){
+					}
+					if(gameboard.AttackTile(tile)){
 						break;
 					}
 				}
@@ -87,16 +96,16 @@ public class CharacterActionsClass : MonoBehaviour {
 			break;
 
 		case TileClass.SOUTH:
-			int k = (int) transform.position.y;
+			int k = (int) transform.position.y-1;
 			while(k>=0){
 				Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3(transform.position.x, k), Quaternion.identity);
 				GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, k);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasEntity() && tc.entity.tag == "Player" && tc.entity != gameObject){
-						tc.entity.GetComponent<CharacterClass>().Die();
+					if(tc.HasWall(TileClass.SOUTH) || tc.HasWall(TileClass.NORTH)){
 						break;
-					}else if(tc.HasWall(TileClass.SOUTH)){
+					}
+					if(gameboard.AttackTile(tile)){
 						break;
 					}
 				}
@@ -105,16 +114,16 @@ public class CharacterActionsClass : MonoBehaviour {
 			break;
 
 		case TileClass.WEST:
-			int l = (int) transform.position.x;
+			int l = (int) transform.position.x-1;
 			while(l>=0){
 				Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3(l,transform.position.y), Quaternion.identity);
 				GameObject tile = gameboard.GetTileAtCoordinate(l,transform.position.y);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasEntity() && tc.entity.tag == "Player" && tc.entity != gameObject){
-						tc.entity.GetComponent<CharacterClass>().Die();
+					if(tc.HasWall(TileClass.WEST) || tc.HasWall(TileClass.EAST)){
 						break;
-					}else if(tc.HasWall(TileClass.WEST)){
+					}
+					if(gameboard.AttackTile(tile)){
 						break;
 					}
 				}

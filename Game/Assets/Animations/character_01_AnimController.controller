@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Character_01_AnimController
+  m_Name: character_01_AnimController
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: Attack
@@ -152,12 +152,12 @@ StateMachine:
       - {fileID: 110100000}
       - {fileID: 110178833}
     data:
-      first: {fileID: 110264828}
-      second: []
-    data:
       first: {fileID: 110200000}
       second:
       - {fileID: 110148671}
+    data:
+      first: {fileID: 110264828}
+      second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

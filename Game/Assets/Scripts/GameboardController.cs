@@ -95,24 +95,27 @@ public class GameboardController : MonoBehaviour {
 		character.GetComponent<CharacterActionsClass>().Shoot(direction);
 	}
 
-	public void AttackTile(GameObject tile){
+	public bool AttackTile(GameObject tile){
 		if(tile == null){
-			return;
+			return false;
 		}
 		TileClass tc = tile.GetComponent<TileClass>();
 		if(tc != null){
 			if(tc.entity != null){
 				// Check if the entity on the tile is a character
 				CharacterClass cc = tc.entity.GetComponent<CharacterClass>();
-				if(cc != null && tc.entity.tag == "Player"){
+				if(cc != null && (tc.entity.tag == "P1" || tc.entity.tag == "P2" || tc.entity.tag == "Character")){
 					cc.Die();
+					return true;
 				}
 			}
 		}
+		return false;
 	}
 
-	public void AttackTile(int x, int y){
-		AttackTile(GetTileAtCoordinate(x,y));
+
+	public bool AttackTile(int x, int y){
+		return AttackTile(GetTileAtCoordinate(x,y));
 	}
 
 	// Create a wall
