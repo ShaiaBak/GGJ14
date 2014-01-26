@@ -3,8 +3,7 @@ using System.Collections;
 
 public class ReplayGame : MonoBehaviour {
 
-	void OnMouseDown()
-	{
+	void OnMouseDown() {
 		Application.LoadLevel("Gameboard");
 	}
 
@@ -12,7 +11,6 @@ public class ReplayGame : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Return)) {
 			Application.LoadLevel("Gameboard");
-			
 		}
 	}
 }
