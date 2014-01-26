@@ -3,49 +3,70 @@ using System.Collections;
 
 public class CharacterClass : MonoBehaviour {
 
+	[SerializeField]
 	private GameboardController gameboard;
 
 	// Use this for initialization
 	void Start () {
 		gameboard = GameObject.FindGameObjectWithTag("Gameboard").GetComponent<GameboardController>();
+		// Set the reference of the tile to the entity on top
+		GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y);
+		if(tile != null){
+			tile.GetComponent<TileClass>().entity = gameObject;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if(Input.GetButtonDown("P1_Choose2")){	// up
+			Move (TileClass.NORTH);
+		}else if(Input.GetButtonDown("P1_Choose4")){	// left
+			Move (TileClass.WEST);
+		}else if(Input.GetButtonDown("P1_Choose5")){	// down
+			Move (TileClass.SOUTH);
+		}else if(Input.GetButtonDown("P1_Choose6")){	// right
+			Move (TileClass.EAST);
+		}
+	}
+
+	public void Move(int direction) {
 		int x = (int) transform.position.x;
 		int y = (int) transform.position.y;
-		int direction = -1;
 
-		if(Input.GetButtonDown("P1_Choose2")){	// up
+		switch(direction) {
+		case TileClass.NORTH:
 			y++;
-			direction = TileClass.NORTH;
-		}else if(Input.GetButtonDown("P1_Choose4")){	// left
-			x--;
-			direction = TileClass.WEST;
-		}else if(Input.GetButtonDown("P1_Choose5")){	// down
-			y--;
-			direction = TileClass.SOUTH;
-		}else if(Input.GetButtonDown("P1_Choose6")){	// right
+			break;
+		case TileClass.EAST:
 			x++;
-			direction = TileClass.EAST;
+			break;
+		case TileClass.SOUTH:
+			y--;
+			break;
+		case TileClass.WEST:
+			x--;
+			break;
 		}
 
-		if (direction >= 0 && direction < 4) {
-			GameObject obj = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y);
-			TileClass currentTile = null;
-			if (obj != null) {
-				currentTile = obj.GetComponent<TileClass>();
-			}
-			obj = gameboard.GetTileAtCoordinate(x, y);
-			TileClass nextTile = null;
-			if (obj != null) {
-				nextTile = obj.GetComponent<TileClass>();
-			}
-			
-			if (currentTile != null && !currentTile.hasWall (direction)) {
-				// todo check other tile for existing character
-				transform.position = new Vector2 (x,y);
-			}
+		GameObject obj = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y);
+		TileClass currentTile = null;
+		if (obj != null) {
+			currentTile = obj.GetComponent<TileClass>();
 		}
+		obj = gameboard.GetTileAtCoordinate(x, y);
+		TileClass nextTile = null;
+		if (obj != null) {
+			nextTile = obj.GetComponent<TileClass>();
+		}
+		
+		if (currentTile != null && !currentTile.HasWall (direction) && nextTile != null && !nextTile.HasEntity()) {
+			transform.position = new Vector2 (x,y);
+			currentTile.entity = null;
+			nextTile.entity = gameObject;
+		}
+	}
+
+	public void Die() {
+		Destroy (gameObject);
 	}
 }
