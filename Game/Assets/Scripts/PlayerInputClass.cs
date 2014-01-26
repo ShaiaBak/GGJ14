@@ -206,38 +206,43 @@ public class PlayerInputClass : MonoBehaviour {
 		switch (CommandToExecute)
 		{
 			case CardCommand.CC_MoveLeft:
-			Debug.Log("Character moved left");
+					Debug.Log("Character moved left");
 					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.WEST);
 					break;
 			case CardCommand.CC_MoveRight:
-			Debug.Log("Character moved right");
+					Debug.Log("Character moved right");
 					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.EAST);
 					break;
 			case CardCommand.CC_MoveUp:
-			Debug.Log("Character moved up");
+					Debug.Log("Character moved up");
 					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.NORTH);
 					break;
 			case CardCommand.CC_MoveDown:
-			Debug.Log("Character moved down");
+					Debug.Log("Character moved down");
 					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.SOUTH);
 					break;
 			case CardCommand.CC_AttackAdj:
-
+					Debug.Log("Character attacked adjacently");
+					GBController.CharacterSwipe(GBCom.GetCharacter());
 					break;
 			case CardCommand.CC_ShootLeft:
-
+					Debug.Log("Character shot to the left");
+					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.WEST);
 					break;
 			case CardCommand.CC_ShootRight:
-
+					Debug.Log("Character shot to the right");
+					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.EAST);
 					break;
 			case CardCommand.CC_ShootUp:
-
+					Debug.Log("Character shot up");
+					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.NORTH);
 					break;
 			case CardCommand.CC_ShootDown:
-
+					Debug.Log("Character shot down");
+					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.SOUTH);
 					break;
 			case CardCommand.CC_HoldPosition:
-
+					Debug.Log("Character did not move");
 					break;
 				};
 		

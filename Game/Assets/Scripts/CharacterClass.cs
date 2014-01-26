@@ -19,15 +19,15 @@ public class CharacterClass : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown("P1_Choose2")){	// up
-			Move (TileClass.NORTH);
-		}else if(Input.GetButtonDown("P1_Choose4")){	// left
-			Move (TileClass.WEST);
-		}else if(Input.GetButtonDown("P1_Choose5")){	// down
-			Move (TileClass.SOUTH);
-		}else if(Input.GetButtonDown("P1_Choose6")){	// right
-			Move (TileClass.EAST);
-		}
+//		if(Input.GetButtonDown("P1_Choose2")){	// up
+//			Move (TileClass.NORTH);
+//		}else if(Input.GetButtonDown("P1_Choose4")){	// left
+//			Move (TileClass.WEST);
+//		}else if(Input.GetButtonDown("P1_Choose5")){	// down
+//			Move (TileClass.SOUTH);
+//		}else if(Input.GetButtonDown("P1_Choose6")){	// right
+//			Move (TileClass.EAST);
+//		}
 	}
 
 	public void Move(int direction) {

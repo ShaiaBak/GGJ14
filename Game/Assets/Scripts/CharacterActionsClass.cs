@@ -13,19 +13,19 @@ public class CharacterActionsClass : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetButtonDown("P1_Choose1")){
-			Swipe();
-//			Shoot(TileClass.NORTH);
-		}
-		if(Input.GetButtonDown("P1_Choose3")){
-			Shoot(TileClass.WEST);
-		}
-		if(Input.GetButtonDown("P2_Choose2")){
-			gameboard.CreateWall((int)transform.position.x, (int)transform.position.y, TileClass.NORTH);
-		}
-		if(Input.GetButtonDown("P2_Choose1")){
-			gameboard.DestroyWall((int)transform.position.x, (int)transform.position.y, TileClass.NORTH);
-		}
+//		if(Input.GetButtonDown("P1_Choose1")){
+//			Swipe();
+////			Shoot(TileClass.NORTH);
+//		}
+//		if(Input.GetButtonDown("P1_Choose3")){
+//			Shoot(TileClass.WEST);
+//		}
+//		if(Input.GetButtonDown("P2_Choose2")){
+//			gameboard.CreateWall((int)transform.position.x, (int)transform.position.y, TileClass.NORTH);
+//		}
+//		if(Input.GetButtonDown("P2_Choose1")){
+//			gameboard.DestroyWall((int)transform.position.x, (int)transform.position.y, TileClass.NORTH);
+//		}
 	}
 
 	public void Swipe(){
