@@ -4,8 +4,8 @@ using System.Collections;
 public class GameboardController : MonoBehaviour {
 
 	private GameObject[,] tileArray;
-	private int width;
-	private int height;
+	public int width;
+	public int height;
 
 	// Use this for initialization
 	void Awake () {
@@ -70,6 +70,7 @@ public class GameboardController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 	}
 
 	public void MoveCharacter(GameObject player, int direction) {
@@ -150,7 +151,7 @@ public class GameboardController : MonoBehaviour {
 	// Create a wall
 	// (x, y) is the coordinate of the tile
 	// direction is the direction from the tile where the wall should be destroyed
-	public void destroyWall(int x, int y, int direction) {
+	public void DestroyWall(int x, int y, int direction) {
 		TileClass tile = GetTileAtCoordinate (x, y).GetComponent<TileClass>();
 		TileClass otherTile = GetNeighbouringTile (x, y, direction).GetComponent<TileClass>();
 		GameObject wall = null;
