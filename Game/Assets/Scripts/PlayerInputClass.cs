@@ -103,7 +103,7 @@ public class PlayerInputClass : MonoBehaviour {
 				{
 					Debug.Log("SIMULATION: Finishing Cycle, going back to Input");
 					// We're done simulating, wait for input again
-					GS = GameState.GS_AWAITING_INPUT;
+					ResetInputs();
 					CManager.GenerateCardPool();
 				}
 				else
@@ -183,7 +183,7 @@ public class PlayerInputClass : MonoBehaviour {
 
 		for (int i = 2; i < GBCommands.Length; i++)
 		{
-			GBCommands[i] = new GameboardCommand(NPCCharacters[i-2], CManager.GetCardFromCurrentPool(NPCCurrentChoices[i+2]));
+			GBCommands[i] = new GameboardCommand(NPCCharacters[i-2], CManager.GetCardFromCurrentPool(NPCCurrentChoices[i-2]));
 		}
 
 		BoardActionCycle = 0;
@@ -206,16 +206,20 @@ public class PlayerInputClass : MonoBehaviour {
 		switch (CommandToExecute)
 		{
 			case CardCommand.CC_MoveLeft:
-
+			Debug.Log("Character moved left");
+					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.WEST);
 					break;
 			case CardCommand.CC_MoveRight:
-
+			Debug.Log("Character moved right");
+					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.EAST);
 					break;
 			case CardCommand.CC_MoveUp:
-
+			Debug.Log("Character moved up");
+					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.NORTH);
 					break;
 			case CardCommand.CC_MoveDown:
-
+			Debug.Log("Character moved down");
+					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.SOUTH);
 					break;
 			case CardCommand.CC_AttackAdj:
 

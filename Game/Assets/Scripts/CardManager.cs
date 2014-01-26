@@ -64,7 +64,13 @@ public class CardManager : MonoBehaviour {
 
 	private const int CARDPOOLMAX = 6;
 	private Card[] CurrentCardPool;
-	private GameObject[] CardActors;
+
+	public GameObject CardActor0;
+	public GameObject CardActor1;
+	public GameObject CardActor2;
+	public GameObject CardActor3;
+	public GameObject CardActor4;
+	public GameObject CardActor5;
 
 
 	// Use this for initialization
@@ -74,7 +80,6 @@ public class CardManager : MonoBehaviour {
 
 	void Awake()
 	{
-		CardActors = GameObject.FindGameObjectsWithTag("Card");
 		CurrentCardPool = new Card[CARDPOOLMAX];
 		GenerateCardPool();
 	}
@@ -104,12 +109,19 @@ public class CardManager : MonoBehaviour {
 
 			CurrentCardPool[i] = NewCard;
 
-			Debug.Log("CardActors Length: " + CardActors.Length + ", i: " + i);
-			if (i < CardActors.Length)
+			CardCommand[] NewCardCommands = NewCard.GetCommands();
+			CardActorClass CAClass =CardActor0.GetComponent<CardActorClass>(); // BAD CODING - NEED TO THROW EXCEPTION INSTEAD!
+			switch(i)
 			{
-				CardCommand[] NewCardCommands = NewCard.GetCommands();
-				CardActors[i].GetComponent<CardActorClass>().SetupUserInterface(NewCardCommands[0], NewCardCommands[1]);
-			}
+			case 0: CAClass = CardActor0.GetComponent<CardActorClass>(); break;
+			case 1: CAClass = CardActor1.GetComponent<CardActorClass>(); break;
+			case 2: CAClass = CardActor2.GetComponent<CardActorClass>(); break;
+			case 3: CAClass = CardActor3.GetComponent<CardActorClass>(); break;
+			case 4: CAClass = CardActor4.GetComponent<CardActorClass>(); break;
+			case 5: CAClass = CardActor5.GetComponent<CardActorClass>(); break;
+			};
+
+			CAClass.SetupUserInterface(NewCardCommands[0], NewCardCommands[1]);
 		}
 	}
 
@@ -120,7 +132,7 @@ public class CardManager : MonoBehaviour {
 			return CurrentCardPool[index];
 		}
 
-		Debug.Log("ERROR HAPPENED WHILE GETTING CARD");
+		Debug.Log("CardManager: ERROR HAPPENED WHILE GETTING CARD");
 		return new Card();
 	}
 
