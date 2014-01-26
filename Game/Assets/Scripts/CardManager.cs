@@ -15,6 +15,7 @@ public enum CardCommand
 	CC_ShootRight,
 	CC_ShootUp,
 	CC_ShootDown,
+	CC_HoldPosition,
 	CC_LASTINDEX
 };
 
@@ -52,7 +53,7 @@ public struct Card
 	{
 		return (FirstCommand != CardCommand.CC_LASTINDEX && SecondCommand != CardCommand.CC_LASTINDEX);
 	}
-
+	
 	public CardCommand[] GetCommands()
 	{
 		return new CardCommand[2] { FirstCommand, SecondCommand };
@@ -63,10 +64,17 @@ public class CardManager : MonoBehaviour {
 
 	private const int CARDPOOLMAX = 6;
 	private Card[] CurrentCardPool;
+	private GameObject[] CardActors;
+
 
 	// Use this for initialization
 	void Start () {
+	
+	}
 
+	void Awake()
+	{
+		CardActors = GameObject.FindGameObjectsWithTag("Card");
 		CurrentCardPool = new Card[CARDPOOLMAX];
 		GenerateCardPool();
 	}
@@ -95,6 +103,13 @@ public class CardManager : MonoBehaviour {
 			}
 
 			CurrentCardPool[i] = NewCard;
+
+			Debug.Log("CardActors Length: " + CardActors.Length + ", i: " + i);
+			if (i < CardActors.Length)
+			{
+				CardCommand[] NewCardCommands = NewCard.GetCommands();
+				CardActors[i].GetComponent<CardActorClass>().SetupUserInterface(NewCardCommands[0], NewCardCommands[1]);
+			}
 		}
 	}
 
@@ -105,6 +120,7 @@ public class CardManager : MonoBehaviour {
 			return CurrentCardPool[index];
 		}
 
+		Debug.Log("ERROR HAPPENED WHILE GETTING CARD");
 		return new Card();
 	}
 

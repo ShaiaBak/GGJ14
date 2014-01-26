@@ -28,12 +28,12 @@ public class UIManager : MonoBehaviour {
 
 
 	// Notify bools
-	bool bRefreshCardUI = false;
+	bool bRefreshCardUI;
 
 
 	// Use this for initialization
 	void Start () {
-
+		bRefreshCardUI = true;
 	}
 	
 	// Update is called once per frame
@@ -51,6 +51,7 @@ public class UIManager : MonoBehaviour {
 	void RefreshCardUI()
 	{
 		bRefreshCardUI = false;
+		gameObject.GetComponent<CardManager>().GenerateCardPool();
 
 		// We need to figure out how we're going to display our cards...
 		// Could we dynamically create prefabs?
