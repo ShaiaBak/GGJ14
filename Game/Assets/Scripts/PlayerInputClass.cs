@@ -313,6 +313,45 @@ public class PlayerInputClass : MonoBehaviour {
 					Debug.Log(GBCom.GetCharacter().tag + " did not move");
 				}
 				break;
+			case CardCommand.CC_CreateWallNorth:
+				Debug.Log(GBCom.GetCharacter().tag + " created a wall above");
+				GBController.CreateWall(GBCom.GetCharacter(), TileClass.NORTH);
+				break;
+			case CardCommand.CC_CreateWallEast:
+				Debug.Log(GBCom.GetCharacter().tag + " created a wall to the right");
+				GBController.CreateWall(GBCom.GetCharacter(), TileClass.EAST);
+				break;
+			case CardCommand.CC_CreateWallSouth:
+				Debug.Log(GBCom.GetCharacter().tag + " created a wall below");
+				GBController.CreateWall(GBCom.GetCharacter(), TileClass.SOUTH);
+				break;
+			case CardCommand.CC_CreateWallWest:
+				Debug.Log(GBCom.GetCharacter().tag + " created a wall to the left");
+				GBController.CreateWall(GBCom.GetCharacter(), TileClass.WEST);
+				break;
+			case CardCommand.CC_DestroyWallNorth:
+				Debug.Log(GBCom.GetCharacter().tag + " destroyed the wall above");
+				GBController.DestroyWall(GBCom.GetCharacter(), TileClass.NORTH);
+				break;
+			case CardCommand.CC_DestroyWallEast:
+				Debug.Log(GBCom.GetCharacter().tag + " destroyed the wall to the right");
+				GBController.DestroyWall(GBCom.GetCharacter(), TileClass.EAST);
+				break;
+			case CardCommand.CC_DestroyWallSouth:
+				Debug.Log(GBCom.GetCharacter().tag + " destroyed the wall below");
+				GBController.DestroyWall(GBCom.GetCharacter(), TileClass.SOUTH);
+				break;
+			case CardCommand.CC_DestroyWallWest:
+				Debug.Log(GBCom.GetCharacter().tag + " destroyed the wall to the left");
+				GBController.DestroyWall(GBCom.GetCharacter(), TileClass.WEST);
+				break;
+			case CardCommand.CC_DestroyWallAll:
+				Debug.Log(GBCom.GetCharacter().tag + " destroyed all the walls around");
+				GBController.DestroyWall(GBCom.GetCharacter(), TileClass.NORTH);
+				GBController.DestroyWall(GBCom.GetCharacter(), TileClass.EAST);
+				GBController.DestroyWall(GBCom.GetCharacter(), TileClass.SOUTH);
+				GBController.DestroyWall(GBCom.GetCharacter(), TileClass.WEST);
+				break;
 		}
 	}
 }

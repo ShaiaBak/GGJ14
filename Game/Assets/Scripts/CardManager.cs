@@ -16,6 +16,15 @@ public enum CardCommand
 	CC_ShootUp,
 	CC_ShootDown,
 	CC_HoldPosition,
+	CC_CreateWallNorth,
+	CC_CreateWallEast,
+	CC_CreateWallSouth,
+	CC_CreateWallWest,
+	CC_DestroyWallNorth,
+	CC_DestroyWallEast,
+	CC_DestroyWallSouth,
+	CC_DestroyWallWest,
+	CC_DestroyWallAll,
 	CC_LASTINDEX
 };
 
