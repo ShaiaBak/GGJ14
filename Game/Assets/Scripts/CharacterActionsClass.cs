@@ -36,7 +36,7 @@ public class CharacterActionsClass : MonoBehaviour {
 		if(!tile.HasWall(TileClass.NORTH)){
 			Vector3 pos = new Vector2(transform.position.x, transform.position.y+1);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,90));
 		}
 		if(!tile.HasWall(TileClass.EAST)){
 			Vector3 pos = new Vector2(transform.position.x+1, transform.position.y);
@@ -46,12 +46,12 @@ public class CharacterActionsClass : MonoBehaviour {
 		if(!tile.HasWall(TileClass.SOUTH)){
 			Vector3 pos = new Vector2(transform.position.x, transform.position.y-1);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,-90));
 		}
 		if(!tile.HasWall(TileClass.WEST)){
 			Vector3 pos = new Vector2(transform.position.x-1, transform.position.y);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,180));
 		}
 
 	}
@@ -67,6 +67,7 @@ public class CharacterActionsClass : MonoBehaviour {
 		switch(direction){
 
 		case TileClass.NORTH:
+			projectile.transform.Rotate(new Vector3(0,0,90));
 			if(gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().HasWall(TileClass.NORTH)){
 				Destroy(projectile);
 				break;
@@ -115,6 +116,7 @@ public class CharacterActionsClass : MonoBehaviour {
 			break;
 
 		case TileClass.SOUTH:
+			projectile.transform.Rotate(new Vector3(0,0,-90));
 			if(gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().HasWall(TileClass.SOUTH)){
 				Destroy(projectile);
 				break;
@@ -142,6 +144,7 @@ public class CharacterActionsClass : MonoBehaviour {
 			break;
 
 		case TileClass.WEST:
+			projectile.transform.Rotate(new Vector3(0,0,180));
 			if(gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().HasWall(TileClass.WEST)){
 				Destroy(projectile);
 				break;
