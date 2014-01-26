@@ -10,6 +10,7 @@ public class CharacterClass : MonoBehaviour {
 	float t = 0;
 	private bool isDead = false;
 	private float endTimer = 3f;
+	public AudioClip deathSound;
 
 	// Use this for initialization
 	void Start () {
@@ -93,6 +94,7 @@ public class CharacterClass : MonoBehaviour {
 
 	public void Die() {
 		anim.SetTrigger("Death");
+		audio.PlayOneShot (deathSound);
 		Debug.Log (tag + " Died");
 		isDead = true;
 		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
