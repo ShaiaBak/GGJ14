@@ -1,0 +1,2634 @@
+Initialize engine version: 4.3.2f1 (0517a5ae8669)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [atiu9pag.dll 8.14.1.6143]
+    Renderer: AMD M880G with ATI Mobility Radeon HD 4250       
+    Vendor:   ATI
+    VRAM:     1082 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=1 INTZ=0 RAWZ=0 NULL=0 RESZ=1 SlowINTZ=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Tyler\Documents\GitHub\GGJ14\Game\InPlainSight_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Tyler\Documents\GitHub\GGJ14\Game\InPlainSight_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Tyler\Documents\GitHub\GGJ14\Game\InPlainSight_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Tyler\Documents\GitHub\GGJ14\Game\InPlainSight_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.071 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Card Generated: 1st: CC_MoveLeft, 2nd: CC_MoveDown
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at CardManager.GenerateCardPool () [0x00000] in <filename unknown>:0 
+  at CardManager.Awake () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerInputClass.FindNPCInputs () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.PackageActionsForBoard () [0x00000] in <filename unknown>:0 
+  at PlayerInputClass.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 1.351914 ms
+Card Generated: 1st: CC_MoveRight, 2nd: CC_MoveDown
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveRight, 2nd: CC_MoveLeft
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveDown, 2nd: CC_MoveLeft
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_HoldPosition, 2nd: CC_HoldPosition
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveUp, 2nd: CC_ShootUp
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_HoldPosition, 2nd: CC_MoveRight
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 788.
+Total: 5.710263 ms (FindLiveObjects: 0.073197 ms CreateObjectMapping: 0.032135 ms MarkObjects: 0.193704 ms  DeleteObjects: 4.664973 ms)
+
+P1_Choose1 pressed by P1.
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+P2_Choose4 pressed by P2.
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+INPUT: Inputs accepted! Starting sim...
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+CardManager: ERROR HAPPENED WHILE GETTING CARD
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+SIMULATION: Executing Cycle: 0
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character did not move
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved down
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character did not move
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved down
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+SIMULATION: Executing Cycle: 1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character did not move
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character did not move
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+SIMULATION: Finishing Cycle, going back to Input
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Reset player inputs.
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveDown, 2nd: CC_MoveUp
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveUp, 2nd: CC_MoveLeft
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_ShootLeft, 2nd: CC_ShootDown
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_ShootRight, 2nd: CC_ShootLeft
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveDown, 2nd: CC_ShootRight
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_ShootLeft, 2nd: CC_HoldPosition
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+P1_Choose3 pressed by P1.
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+P2_Choose6 pressed by P2.
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+INPUT: Inputs accepted! Starting sim...
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+CardManager: ERROR HAPPENED WHILE GETTING CARD
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+SIMULATION: Executing Cycle: 0
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character shot to the left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character shot to the left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved up
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved down
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+SIMULATION: Executing Cycle: 1
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character shot down
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character did not move
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character moved left
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Character shot to the right
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+SIMULATION: Finishing Cycle, going back to Input
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Reset player inputs.
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveUp, 2nd: CC_MoveLeft
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveDown, 2nd: CC_MoveLeft
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveLeft, 2nd: CC_AttackAdj
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveRight, 2nd: CC_ShootLeft
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveDown, 2nd: CC_MoveDown
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
+Card Generated: 1st: CC_MoveUp, 2nd: CC_MoveRight
+ 
+(Filename: C:/BuildAgent/work/d3d49558e4d408f4/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 53)
+
