@@ -35,22 +35,22 @@ public class CharacterActionsClass : MonoBehaviour {
 		if(!tile.HasWall(TileClass.NORTH)){
 			Vector3 pos = new Vector2(transform.position.x, transform.position.y+1);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.EAST)){
 			Vector3 pos = new Vector2(transform.position.x+1, transform.position.y);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.SOUTH)){
 			Vector3 pos = new Vector2(transform.position.x, transform.position.y-1);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.WEST)){
 			Vector3 pos = new Vector2(transform.position.x-1, transform.position.y);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 
 	}
@@ -58,37 +58,54 @@ public class CharacterActionsClass : MonoBehaviour {
 	public void Shoot(int direction){
 		anim.SetTrigger ("Attack");
 		audio.PlayOneShot (Camera.main.GetComponent<ObjectStore> ().shootSound);
+	
+		GameObject projectile = (GameObject) Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, transform.position, Quaternion.identity);
+		ProjectileClass pc = projectile.GetComponent<ProjectileClass>();
+		Vector2 target = pc.transform.position;
+
 		switch(direction){
 
 		case TileClass.NORTH:
+			if(gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().HasWall(TileClass.NORTH)){
+				Destroy(projectile);
+				break;
+			}
 			int i = (int) transform.position.y+1;
+			// Find the target to shoot at
 			while(i<gameboard.height){
-				Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3(transform.position.x, i), Quaternion.identity);
 				GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, i);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasWall(TileClass.NORTH) || tc.HasWall(TileClass.SOUTH)){
+					if(tc.HasWall(TileClass.NORTH)){
+						target = tile.transform.position;
 						break;
 					}
 					if(gameboard.AttackTile(tile)){
+						target = tile.transform.position;
 						break;
 					}
 				}
 				i++;
+
 			}
 			break;
 	
 		case TileClass.EAST:
+			if(gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().HasWall(TileClass.EAST)){
+				Destroy(projectile);
+				break;
+			}
 			int j = (int) transform.position.x+1;
 			while(j<gameboard.width){
-				Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3(j,transform.position.y), Quaternion.identity);
 				GameObject tile = gameboard.GetTileAtCoordinate(j,transform.position.y);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasWall(TileClass.EAST) || tc.HasWall(TileClass.WEST)){
+					if(tc.HasWall(TileClass.EAST)){
+						target = tile.transform.position;
 						break;
 					}
 					if(gameboard.AttackTile(tile)){
+						target = tile.transform.position;
 						break;
 					}
 				}
@@ -97,40 +114,59 @@ public class CharacterActionsClass : MonoBehaviour {
 			break;
 
 		case TileClass.SOUTH:
+			if(gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().HasWall(TileClass.SOUTH)){
+				Destroy(projectile);
+				break;
+			}
 			int k = (int) transform.position.y-1;
 			while(k>=0){
-				Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3(transform.position.x, k), Quaternion.identity);
 				GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, k);
 				if(tile != null){
+					print ("x:" + transform.position.x + " y:"+ k + "pos:"+ tile.transform.position);
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasWall(TileClass.SOUTH) || tc.HasWall(TileClass.NORTH)){
+					if(tc.HasWall(TileClass.SOUTH)){
+						print ("1");
+						target = tile.transform.position;
 						break;
 					}
 					if(gameboard.AttackTile(tile)){
+						print ("2");
+						target = tile.transform.position;
 						break;
 					}
 				}
 				k--;
+
 			}
 			break;
 
 		case TileClass.WEST:
+			if(gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().HasWall(TileClass.WEST)){
+				Destroy(projectile);
+				break;
+			}
 			int l = (int) transform.position.x-1;
 			while(l>=0){
-				Instantiate(Camera.main.GetComponent<ObjectStore>().projectile, new Vector3(l,transform.position.y), Quaternion.identity);
 				GameObject tile = gameboard.GetTileAtCoordinate(l,transform.position.y);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasWall(TileClass.WEST) || tc.HasWall(TileClass.EAST)){
+					if(tc.HasWall(TileClass.WEST)){
+						target = tile.transform.position;
 						break;
 					}
 					if(gameboard.AttackTile(tile)){
+						target = tile.transform.position;
 						break;
 					}
 				}
 				l--;
 			}
 			break;
+
+		}
+//		print (pc.transform.position + " :: " + target);
+		if(pc!=null){
+			pc.SetTargetLocation(pc.transform.position, target);
 		}
 		
 	}
