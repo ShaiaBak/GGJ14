@@ -75,14 +75,14 @@ public class CharacterActionsClass : MonoBehaviour {
 			int i = (int) transform.position.y+1;
 			// Find the target to shoot at
 			while(i<gameboard.height){
-				GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, i);
+				GameObject tile = gameboard.GetTileAtCoordinate((int) transform.position.x, i);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasWall(TileClass.NORTH)){
+					if(gameboard.AttackTile(tile)){
 						target = tile.transform.position;
 						break;
 					}
-					if(gameboard.AttackTile(tile)){
+					if(tc.HasWall(TileClass.NORTH)){
 						target = tile.transform.position;
 						break;
 					}
@@ -102,11 +102,11 @@ public class CharacterActionsClass : MonoBehaviour {
 				GameObject tile = gameboard.GetTileAtCoordinate(j,transform.position.y);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasWall(TileClass.EAST)){
+					if(gameboard.AttackTile(tile)){
 						target = tile.transform.position;
 						break;
 					}
-					if(gameboard.AttackTile(tile)){
+					if(tc.HasWall(TileClass.EAST)){
 						target = tile.transform.position;
 						break;
 					}
@@ -127,13 +127,13 @@ public class CharacterActionsClass : MonoBehaviour {
 				if(tile != null){
 					print ("x:" + transform.position.x + " y:"+ k + "pos:"+ tile.transform.position);
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasWall(TileClass.SOUTH)){
-						print ("1");
+					if(gameboard.AttackTile(tile)){
+						print ("2");
 						target = tile.transform.position;
 						break;
 					}
-					if(gameboard.AttackTile(tile)){
-						print ("2");
+					if(tc.HasWall(TileClass.SOUTH)){
+						print ("1");
 						target = tile.transform.position;
 						break;
 					}
@@ -154,11 +154,11 @@ public class CharacterActionsClass : MonoBehaviour {
 				GameObject tile = gameboard.GetTileAtCoordinate(l,transform.position.y);
 				if(tile != null){
 					TileClass tc = tile.GetComponent<TileClass>();
-					if(tc.HasWall(TileClass.WEST)){
+					if(gameboard.AttackTile(tile)){
 						target = tile.transform.position;
 						break;
 					}
-					if(gameboard.AttackTile(tile)){
+					if(tc.HasWall(TileClass.WEST)){
 						target = tile.transform.position;
 						break;
 					}
