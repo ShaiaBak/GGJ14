@@ -7,6 +7,9 @@ public class GameboardController : MonoBehaviour {
 	private GameObject[,] tileArray;
 	public int width;
 	public int height;
+	private bool gameEnded = false;
+	private float endGameTimer = 3f;
+	private int winner = -1;
 
 	private bool gameEnded;
 	private float endGameTimer = 3f;

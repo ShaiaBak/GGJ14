@@ -9,7 +9,6 @@ public class CharacterClass : MonoBehaviour {
 	TileClass nextTile;
 	float t = 0;
 	private bool isDead = false;
-	private float endTimer = 3f;
 	public AudioClip deathSound;
 
 	// Use this for initialization
@@ -93,14 +92,13 @@ public class CharacterClass : MonoBehaviour {
 		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
 
 		if(tag == "P1"){
-			gameboard.EndGame (1);
+			gameboard.EndGame(1);
 		}else if(tag == "P2"){
-			gameboard.EndGame (2);
+			gameboard.EndGame(2);
 		}
 		tag = "Untagged";
 		foreach(MonoBehaviour mb in GetComponents<MonoBehaviour>()){
 			Destroy(mb);
 		}
-//		Destroy (gameObject);
 	}
 }
