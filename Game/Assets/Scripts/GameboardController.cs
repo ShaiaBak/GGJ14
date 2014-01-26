@@ -75,7 +75,10 @@ public class GameboardController : MonoBehaviour {
 	/// <param name="character">Character.</param>
 	/// <param name="direction">Direction. eg. (MoveCharacter(player0, TileClass.NORTH))</param>
 	public void MoveCharacter(GameObject character, int direction) {
-		character.GetComponent<CharacterClass>().Move(direction);
+		CharacterClass cc = character.GetComponent<CharacterClass>();
+		if(cc!=null){
+			cc.Move(direction);
+		}
 	}
 
 	/// <summary>
@@ -83,7 +86,10 @@ public class GameboardController : MonoBehaviour {
 	/// </summary>
 	/// <param name="character">Character.</param>
 	public void CharacterSwipe(GameObject character){
-		character.GetComponent<CharacterActionsClass>().Swipe();
+		CharacterActionsClass cac = character.GetComponent<CharacterActionsClass>();
+		if(cac!=null){
+			cac.Swipe();
+		}
 	}
 
 	/// <summary>
@@ -92,7 +98,10 @@ public class GameboardController : MonoBehaviour {
 	/// <param name="character">Character.</param>
 	/// <param name="direction">Direction. eg. (CharacterShoot(player0, TileClass.NORTH))</param>
 	public void CharacterShoot(GameObject character, int direction){
-		character.GetComponent<CharacterActionsClass>().Shoot(direction);
+		CharacterActionsClass cac = character.GetComponent<CharacterActionsClass>();
+		if(cac!=null){
+			cac.Shoot(direction);
+		}
 	}
 
 	public bool AttackTile(GameObject tile){
