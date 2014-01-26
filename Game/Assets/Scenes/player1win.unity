@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1210870837}
   - 131: {fileID: 1210870836}
+  - 114: {fileID: 1210870838}
   m_Layer: 0
   m_Name: replay
   m_TagString: Untagged
@@ -166,6 +167,17 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1210870838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1210870835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca2b4280c1f6fe41a38402c70f9e7c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1485772072
 GameObject:
   m_ObjectHideFlags: 0
