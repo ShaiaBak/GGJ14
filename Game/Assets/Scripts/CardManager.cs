@@ -127,12 +127,12 @@ public class CardManager : MonoBehaviour {
 
 	public Card GetCardFromCurrentPool(int index)
 	{
-		if (index > 0 && index < CurrentCardPool.Length)
+		if (index >= 0 && index < CurrentCardPool.Length)
 		{
 			return CurrentCardPool[index];
 		}
 
-		Debug.Log("CardManager: ERROR HAPPENED WHILE GETTING CARD");
+		Debug.Log("CardManager: ERROR HAPPENED WHILE GETTING CARD (index=" + index + ")");
 		return new Card();
 	}
 
