@@ -5,7 +5,9 @@ public class ObjectStore : MonoBehaviour {
 
 	public GameObject hWall;
 	public GameObject vWall;
-	public GameObject projectile;
+	public GameObject projectile1;
+	public GameObject projectile2;
+	public GameObject projectile3;
 	public AudioClip shootSound;
 	// Use this for initialization
 	void Start () {
