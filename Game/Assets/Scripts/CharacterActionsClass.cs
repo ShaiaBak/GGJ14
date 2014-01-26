@@ -15,6 +15,15 @@ public class CharacterActionsClass : MonoBehaviour {
 		if(Input.GetButtonDown("P1_Choose1")){
 			Swipe();
 		}
+		if(Input.GetButtonDown("P1_Choose3")){
+			Shoot(TileClass.EAST);
+		}
+		if(Input.GetButtonDown("P2_Choose2")){
+			gameboard.CreateWall((int)transform.position.x, (int)transform.position.y, TileClass.NORTH);
+		}
+		if(Input.GetButtonDown("P2_Choose1")){
+			gameboard.DestroyWall((int)transform.position.x, (int)transform.position.y, TileClass.NORTH);
+		}
 	}
 
 	private void Swipe(){
@@ -40,7 +49,18 @@ public class CharacterActionsClass : MonoBehaviour {
 	}
 
 	private void Shoot(int direction){
-		
+		//Pretend we're shooting right
+		//Loop through transform.position.x to gameboardcontroller.width-1
+		for(int i=(int)transform.position.x+1; i<gameboard.width; i++){
+			Instantiate(Camera.main.GetComponent<ObjectStore>().hWall, new Vector3(i,transform.position.y), Quaternion.identity);
+			GameObject tile = gameboard.GetTileAtCoordinate(i,transform.position.y);
+			if(tile != null){
+				TileClass tc = tile.GetComponent<TileClass>();
+				if(tc.HasEntity()){
+					tc.entity.GetComponent<CharacterClass>().Die();
+				}
+			}
+		}
 	}
 	
 }
