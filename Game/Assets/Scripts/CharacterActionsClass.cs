@@ -4,9 +4,10 @@ using System.Collections;
 public class CharacterActionsClass : MonoBehaviour {
 
 	private GameboardController gameboard;
-
+	Animator anim;
 	// Use this for initialization
 	void Start () {
+		anim = GetComponent<Animator>();
 		gameboard = GameObject.FindGameObjectWithTag("Gameboard").GetComponent<GameboardController>();
 	}
 	
@@ -27,12 +28,8 @@ public class CharacterActionsClass : MonoBehaviour {
 		}
 	}
 
-	private void Swipe(){
-//		print (gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y+1));
-//		print (gameboard.GetTileAtCoordinate(transform.position.x+1, transform.position.y));
-//		print (gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y-1));
-//		print (gameboard.GetTileAtCoordinate(transform.position.x-1, transform.position.y));
-
+	public void Swipe(){
+		anim.SetTrigger ("Attack");
 		TileClass tile = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>();
 		if(!tile.HasWall(TileClass.NORTH)){
 			gameboard.AttackTile((int)transform.position.x, (int)transform.position.y+1);
@@ -49,8 +46,8 @@ public class CharacterActionsClass : MonoBehaviour {
 
 	}
 
-	private void Shoot(int direction){
-
+	public void Shoot(int direction){
+		anim.SetTrigger ("Attack");
 		switch(direction){
 
 		case TileClass.NORTH:
