@@ -32,13 +32,6 @@ public class CharacterClass : MonoBehaviour {
 	void Update () {
 		transform.position = Vector2.Lerp(currentTile.transform.position, nextTile.transform.position, t);
 		t+=Time.deltaTime;
-
-		if (isDead) {
-			endTimer -= Time.deltaTime;
-			if (endTimer < 0) {
-				EndGame ();
-			}
-		}
 	}
 
 	public void Move(int direction) {
@@ -98,18 +91,16 @@ public class CharacterClass : MonoBehaviour {
 		Debug.Log (tag + " Died");
 		isDead = true;
 		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
-//		Destroy (gameObject);
-	}
 
-	private void EndGame() {
 		if(tag == "P1"){
-			Application.LoadLevel (4);
+			gameboard.EndGame (1);
 		}else if(tag == "P2"){
-			Application.LoadLevel (3);
+			gameboard.EndGame (2);
 		}
 		tag = "Untagged";
 		foreach(MonoBehaviour mb in GetComponents<MonoBehaviour>()){
 			Destroy(mb);
 		}
+//		Destroy (gameObject);
 	}
 }
