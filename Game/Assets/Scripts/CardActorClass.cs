@@ -22,6 +22,7 @@ public class CardActorClass : MonoBehaviour {
 
 	public void SetupUserInterface(CardCommand FirstCom, CardCommand SecondCom)
 	{
+	
 		// TODO: Stretch goal, don't choose colours randomly, choose based on what actions on card
 
 		// Dynamically generates action icons based on card info passed in

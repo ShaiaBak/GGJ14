@@ -38,24 +38,8 @@ public class UIManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (bRefreshCardUI)
-		{
-			RefreshCardUI();
-		}
-
 		// Need to check for when a player has "Locked In" to signify
 
-	}
-
-	void RefreshCardUI()
-	{
-		bRefreshCardUI = false;
-		gameObject.GetComponent<CardManager>().GenerateCardPool();
-
-		// We need to figure out how we're going to display our cards...
-		// Could we dynamically create prefabs?
-		// Or just have game objects set up ahead of time that we modify?
 	}
 
 	public void NotifyForCardRefresh()
