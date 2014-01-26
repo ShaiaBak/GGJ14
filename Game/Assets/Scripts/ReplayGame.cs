@@ -7,4 +7,12 @@ public class ReplayGame : MonoBehaviour {
 	{
 		Application.LoadLevel("Gameboard");
 	}
+
+	// Update is called once per frame
+	void Update () {
+		if (Input.GetKeyDown (KeyCode.Return)) {
+			Application.LoadLevel("Gameboard");
+			
+		}
+	}
 }

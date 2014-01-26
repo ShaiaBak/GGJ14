@@ -37,7 +37,7 @@ public struct Card
 		{
 			FirstCommand = (CardCommand) Random.Range(0, (int) CardCommand.CC_MoveDown + 1);
 			SecondCommand = (CardCommand) Random.Range(0, (int) CardCommand.CC_MoveDown + 1);
-			
+
 			Debug.Log("Card Generated: 1st: " + FirstCommand.ToString() + ", 2nd: " + SecondCommand.ToString());
 		}
 		else
@@ -47,6 +47,32 @@ public struct Card
 			
 			Debug.Log("Card Generated: 1st: " + FirstCommand.ToString() + ", 2nd: " + SecondCommand.ToString());
 		}
+
+		// We need to prevent redundant movements - if it's redundant, we're just going to double up
+		// @ZackM: THIS IS ALSO BAD CODE. AAAHHHHHHHH!!!!
+		bool bIsRedundant = false;
+		switch(FirstCommand)
+		{
+		case CardCommand.CC_MoveDown: 
+			bIsRedundant = (SecondCommand == CardCommand.CC_MoveUp);
+			break;
+		case CardCommand.CC_MoveLeft: 
+			bIsRedundant = (SecondCommand == CardCommand.CC_MoveRight);
+			break;
+		case CardCommand.CC_MoveRight: 
+			bIsRedundant = (SecondCommand == CardCommand.CC_MoveLeft);
+			break;
+		case CardCommand.CC_MoveUp: 
+			bIsRedundant = (SecondCommand == CardCommand.CC_MoveDown);
+			break;
+		}
+
+		if (bIsRedundant)
+		{ 
+			Debug.Log("Redundancy detected, doubling up move");
+			SecondCommand = FirstCommand; 
+		}
+
 	}
 
 	public bool IsValid()
@@ -127,12 +153,12 @@ public class CardManager : MonoBehaviour {
 
 	public Card GetCardFromCurrentPool(int index)
 	{
-		if (index > 0 && index < CurrentCardPool.Length)
+		if (index >= 0 && index < CurrentCardPool.Length)
 		{
 			return CurrentCardPool[index];
 		}
 
-		Debug.Log("CardManager: ERROR HAPPENED WHILE GETTING CARD");
+		Debug.Log("CardManager: ERROR HAPPENED WHILE GETTING CARD (index=" + index + ")");
 		return new Card();
 	}
 
