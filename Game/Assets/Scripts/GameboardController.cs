@@ -79,9 +79,10 @@ public class GameboardController : MonoBehaviour {
 		// Get 2 different index
 		int i = Random.Range(0,characterList.Count);
 		int j = 0;
-		while(j == i){
-			j = Random.Range(0,characterList.Count);
-		}
+		do {
+			j = Random.Range (0, characterList.Count);
+		} while (j == i);
+
 		// Retag everything
 		for(int x=0; x<characterList.Count; x++){
 			if(x == i){

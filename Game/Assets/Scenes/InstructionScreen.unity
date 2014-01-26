@@ -518,10 +518,6 @@ GameObject:
   - 92: {fileID: 1414202245}
   - 124: {fileID: 1414202244}
   - 81: {fileID: 1414202243}
-  - 114: {fileID: 1414202242}
-  - 114: {fileID: 1414202241}
-  - 114: {fileID: 1414202240}
-  - 114: {fileID: 1414202239}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -529,66 +525,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1414202239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1414202238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b467d9ddc3d9461590cf244bdb402e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1414202240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1414202238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ba2fced4da97402c9420ba6e6103cd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CardActor0: {fileID: 0}
-  CardActor1: {fileID: 0}
-  CardActor2: {fileID: 0}
-  CardActor3: {fileID: 0}
-  CardActor4: {fileID: 0}
-  CardActor5: {fileID: 0}
---- !u!114 &1414202241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1414202238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 322d3e573012d48e7a1702f788c08d14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1414202242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1414202238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc0904eeafb23754795e22ae0c0fb67e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hWall: {fileID: 100000, guid: 468244ac13105a14197eaef548472e13, type: 2}
-  vWall: {fileID: 100000, guid: 5daadbd7e78ba5b4e91aa2ee82079975, type: 2}
-  projectile: {fileID: 100000, guid: 6f6522806db3c194590e9dadee77c21a, type: 2}
 --- !u!81 &1414202243
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414202238}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1414202244
 Behaviour:
   m_ObjectHideFlags: 0
