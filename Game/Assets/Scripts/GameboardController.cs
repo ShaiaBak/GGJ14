@@ -305,6 +305,17 @@ public class GameboardController : MonoBehaviour {
 		return null;
 	}
 
+	public TileClass GetNeighbourTileClass(int x, int y, int direction) {
+		GameObject obj = GetNeighbouringTile (x, y, direction);
+		if (obj != null) {
+			TileClass tc = obj.GetComponent<TileClass>();
+			if (tc != null) {
+				return tc;
+			}
+		}
+		return null;
+	}
+
 	public GameObject GetTileAtCoordinate(int x, int y){
 		if (x < 0 || y < 0 || x >= width || y >= height) {
 			return null;
@@ -313,6 +324,21 @@ public class GameboardController : MonoBehaviour {
 	}
 	public GameObject GetTileAtCoordinate(float x, float y){
 		return GetTileAtCoordinate ((int)x, (int)y);
+	}
+
+	public TileClass GetTileClassAtCoordinate(int x, int y) {
+		GameObject obj = GetTileAtCoordinate (x, y);
+		if (obj != null) {
+			TileClass tc = obj.GetComponent<TileClass>();
+			if (tc != null) {
+				return tc;
+			}
+		}
+		return null;
+	}
+
+	public TileClass GetTileClassAtCoordinate(float x, float y) {
+		return GetTileClassAtCoordinate ((int)x, (int)y);
 	}
 
 	public void EndGame(int player) {
