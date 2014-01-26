@@ -6,13 +6,9 @@ TagManager:
   - Gameboard
   - Tile
   - Wall
-<<<<<<< HEAD
   - Character
   - P1
   - P2
-=======
-  - Card
->>>>>>> bc415003362cd250e8402bbdf42e1833d824353f
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
