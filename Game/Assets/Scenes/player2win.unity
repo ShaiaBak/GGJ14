@@ -222,7 +222,7 @@ GameObject:
   - 4: {fileID: 1121699600}
   - 131: {fileID: 1121699599}
   m_Layer: 0
-  m_Name: Player 1 Win
+  m_Name: Player 2 Win
   m_TagString: Untagged
   m_Icon: {fileID: 266726316, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

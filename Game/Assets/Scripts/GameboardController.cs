@@ -96,6 +96,22 @@ public class GameboardController : MonoBehaviour {
 				characterList[x].tag = "Character";
 			}
 		}
+
+		// Place them randomly on the board
+		for (int k = 0; k < characterList.Count; k++) {
+			i = Random.Range (0, width);
+			j = Random.Range (0, height);
+			characterList[k].transform.position = new Vector3(i,j,0);
+
+			for (int l = 0; l < k; l++) {
+				float dx = Mathf.Abs (characterList[k].transform.position.x - characterList[l].transform.position.x);
+				float dy = Mathf.Abs (characterList[k].transform.position.y - characterList[l].transform.position.y);
+				if (dx < 1.1f && dy < 1.1f) {
+					k--; // redo iteration of outer loop
+					break;
+				}
+			}
+		}
 	}
 
 	/// <summary>
