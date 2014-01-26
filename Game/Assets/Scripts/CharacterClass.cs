@@ -69,6 +69,11 @@ public class CharacterClass : MonoBehaviour {
 
 	public void Die() {
 		anim.SetTrigger("Death");
+		if(tag == "P1"){
+			Application.LoadLevel(4);
+		}else if(tag == "P2"){
+			Application.LoadLevel(3);
+		}
 		foreach(MonoBehaviour mb in GetComponents<MonoBehaviour>()){
 			Destroy(mb);
 		}
