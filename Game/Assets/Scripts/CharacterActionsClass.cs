@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CharacterActionsClass : MonoBehaviour {
 
+	public GameObject projectileobj;
 	private GameboardController gameboard;
 	Animator anim;
 	// Use this for initialization
@@ -35,22 +36,22 @@ public class CharacterActionsClass : MonoBehaviour {
 		if(!tile.HasWall(TileClass.NORTH)){
 			Vector3 pos = new Vector2(transform.position.x, transform.position.y+1);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.EAST)){
 			Vector3 pos = new Vector2(transform.position.x+1, transform.position.y);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.SOUTH)){
 			Vector3 pos = new Vector2(transform.position.x, transform.position.y-1);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.WEST)){
 			Vector3 pos = new Vector2(transform.position.x-1, transform.position.y);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 
 	}
@@ -59,7 +60,7 @@ public class CharacterActionsClass : MonoBehaviour {
 		anim.SetTrigger ("Attack");
 		audio.PlayOneShot (Camera.main.GetComponent<ObjectStore> ().shootSound);
 	
-		GameObject projectile = (GameObject) Instantiate(Camera.main.GetComponent<ObjectStore>().projectile1, transform.position, Quaternion.identity);
+		GameObject projectile = (GameObject) Instantiate(projectileobj, transform.position, Quaternion.identity);
 		ProjectileClass pc = projectile.GetComponent<ProjectileClass>();
 		Vector2 target = pc.transform.position;
 
