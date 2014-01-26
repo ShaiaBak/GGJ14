@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Character_02_AnimController
+  m_Name: character_02_death_0
   serializedVersion: 2
   m_AnimatorParameters: []
   m_AnimatorLayers: []
