@@ -5,6 +5,9 @@ public class CharacterClass : MonoBehaviour {
 	
 	private GameboardController gameboard;
 	private Animator anim;
+	TileClass currentTile;
+	TileClass nextTile;
+	float t = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -15,22 +18,21 @@ public class CharacterClass : MonoBehaviour {
 		if(tile != null){
 			tile.GetComponent<TileClass>().entity = gameObject;
 		}
+		TileClass tc = gameboard.GetTileAtCoordinate(transform.position.x,transform.position.y).GetComponent<TileClass>();
+		if(tc!=null){
+			currentTile = tc;
+			nextTile = tc;
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-//		if(Input.GetButtonDown("P1_Choose2")){	// up
-//			Move (TileClass.NORTH);
-//		}else if(Input.GetButtonDown("P1_Choose4")){	// left
-//			Move (TileClass.WEST);
-//		}else if(Input.GetButtonDown("P1_Choose5")){	// down
-//			Move (TileClass.SOUTH);
-//		}else if(Input.GetButtonDown("P1_Choose6")){	// right
-//			Move (TileClass.EAST);
-//		}
+		transform.position = Vector2.Lerp(currentTile.transform.position, nextTile.transform.position, t);
+		t+=Time.deltaTime;
 	}
 
 	public void Move(int direction) {
+		t=0;
 		int x = (int) transform.position.x;
 		int y = (int) transform.position.y;
 
@@ -49,19 +51,27 @@ public class CharacterClass : MonoBehaviour {
 			break;
 		}
 
+		// Reset the tiles to current position
+		TileClass tc = gameboard.GetTileAtCoordinate(transform.position.x,transform.position.y).GetComponent<TileClass>();
+		if(tc!=null){
+			currentTile = tc;
+			nextTile = tc;
+		}
+
 		GameObject obj = gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y);
-		TileClass currentTile = null;
+		TileClass tempCurrentTile = null;
 		if (obj != null) {
-			currentTile = obj.GetComponent<TileClass>();
+			tempCurrentTile = obj.GetComponent<TileClass>();
 		}
 		obj = gameboard.GetTileAtCoordinate(x, y);
-		TileClass nextTile = null;
+		TileClass tempNextTile = null;
 		if (obj != null) {
-			nextTile = obj.GetComponent<TileClass>();
+			tempNextTile = obj.GetComponent<TileClass>();
 		}
 		
-		if (currentTile != null && !currentTile.HasWall (direction) && nextTile != null && !nextTile.HasEntity()) {
-			transform.position = new Vector2 (x,y);
+		if (tempCurrentTile != null && !tempCurrentTile.HasWall (direction) && tempNextTile != null && !tempNextTile.HasEntity()) {
+			currentTile = tempCurrentTile;
+			nextTile = tempNextTile;
 			currentTile.entity = null;
 			nextTile.entity = gameObject;
 		}
