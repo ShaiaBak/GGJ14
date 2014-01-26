@@ -5,6 +5,7 @@ public class ObjectStore : MonoBehaviour {
 
 	public GameObject hWall;
 	public GameObject vWall;
+	public GameObject projectile;
 
 	// Use this for initialization
 	void Start () {
