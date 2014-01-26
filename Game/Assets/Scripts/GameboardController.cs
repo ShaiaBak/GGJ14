@@ -7,6 +7,9 @@ public class GameboardController : MonoBehaviour {
 	private GameObject[,] tileArray;
 	public int width;
 	public int height;
+	private bool gameEnded = false;
+	private float endGameTimer = 3f;
+	private int winner = -1;
 
 	// Use this for initialization
 	void Awake () {
@@ -70,7 +73,20 @@ public class GameboardController : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			Application.LoadLevel("MainMenu");
-			
+		}
+
+		if (gameEnded) {
+			endGameTimer -= Time.deltaTime;
+			if (endGameTimer < 0) {
+				switch(winner) {
+				case 1:
+					Application.LoadLevel (4);
+					break;
+				case 2:
+					Application.LoadLevel (3);
+					break;
+				}
+			}
 		}
 	}
 
@@ -172,12 +188,17 @@ public class GameboardController : MonoBehaviour {
 		return AttackTile(GetTileAtCoordinate(x,y));
 	}
 
+	public void CreateWall(GameObject character, int direction) {
+		CreateWall ((int)character.transform.position.x, (int)character.transform.position.y, direction);
+	}
+
 	// Create a wall
 	// (x, y) is the coordinate of the tile
 	// direction is the direction from the tile where the wall should be created
 	public void CreateWall(int x, int y, int direction) {
 		TileClass tile = GetTileAtCoordinate (x, y).GetComponent<TileClass>();
-		TileClass otherTile;
+		TileClass otherTile = null;
+		GameObject obj;
 		ObjectStore objStore = Camera.main.GetComponent<ObjectStore>();
 		GameObject wall;
 		float wallX = x;
@@ -185,8 +206,11 @@ public class GameboardController : MonoBehaviour {
 
 		switch (direction) {
 		case TileClass.NORTH:
-			otherTile = GetTileAtCoordinate (x, y+1).GetComponent<TileClass>();
-			if (!tile.HasWall (TileClass.NORTH) && !otherTile.HasWall (TileClass.SOUTH)) {
+			obj = GetTileAtCoordinate (x, y+1);
+			if (obj) {
+				otherTile = obj.GetComponent<TileClass>();
+			}
+			if (!tile.HasWall (TileClass.NORTH) && otherTile != null && !otherTile.HasWall (TileClass.SOUTH)) {
 				wallY += 0.5f;
 				wall = objStore.CreateHorizontalWall(wallX, wallY);
 				tile.SetWall (TileClass.NORTH, wall);
@@ -194,17 +218,23 @@ public class GameboardController : MonoBehaviour {
 			}
 			break;
 		case TileClass.EAST:
-			otherTile = GetTileAtCoordinate (x+1, y).GetComponent<TileClass>();
-			if (!tile.HasWall (TileClass.EAST) && !otherTile.HasWall (TileClass.WEST)) {
+			obj = GetTileAtCoordinate (x+1, y);
+			if (obj) {
+				otherTile = obj.GetComponent<TileClass>();
+			}
+			if (!tile.HasWall (TileClass.EAST) && otherTile != null && !otherTile.HasWall (TileClass.WEST)) {
 				wallX -= 0.5f;
-				wall = objStore.CreateHorizontalWall(wallX, wallY);
+				wall = objStore.CreateVerticalWall(wallX, wallY);
 				tile.SetWall (TileClass.EAST, wall);
 				otherTile.SetWall (TileClass.WEST, wall);
 			}
 			break;
 		case TileClass.SOUTH:
-			otherTile = GetTileAtCoordinate (x, y-1).GetComponent<TileClass>();
-			if (!tile.HasWall (TileClass.SOUTH) && !otherTile.HasWall (TileClass.NORTH)) {
+			obj = GetTileAtCoordinate (x, y-1);
+			if (obj) {
+				otherTile = obj.GetComponent<TileClass>();
+			}
+			if (!tile.HasWall (TileClass.SOUTH) && otherTile != null && !otherTile.HasWall (TileClass.NORTH)) {
 				wallY -= 0.5f;
 				wall = objStore.CreateHorizontalWall(wallX, wallY);
 				tile.SetWall (TileClass.SOUTH, wall);
@@ -212,10 +242,13 @@ public class GameboardController : MonoBehaviour {
 			}
 			break;
 		case TileClass.WEST:
-			otherTile = GetTileAtCoordinate (x-1, y).GetComponent<TileClass>();
-			if (!tile.HasWall (TileClass.WEST) && !otherTile.HasWall (TileClass.EAST)) {
+			obj = GetTileAtCoordinate (x-1, y);
+			if (obj) {
+				otherTile = obj.GetComponent<TileClass>();
+			}
+			if (!tile.HasWall (TileClass.WEST) && otherTile != null && !otherTile.HasWall (TileClass.EAST)) {
 				wallX += 0.5f;
-				wall = objStore.CreateHorizontalWall(wallX, wallY);
+				wall = objStore.CreateVerticalWall(wallX, wallY);
 				tile.SetWall (TileClass.WEST, wall);
 				otherTile.SetWall (TileClass.EAST, wall);
 			}
@@ -223,16 +256,24 @@ public class GameboardController : MonoBehaviour {
 		}
 	}
 
-	// Create a wall
+	public void DestroyWall(GameObject character, int direction) {
+		DestroyWall ((int)character.transform.position.x, (int)character.transform.position.y, direction);
+	}
+
+	// Destroy a wall
 	// (x, y) is the coordinate of the tile
 	// direction is the direction from the tile where the wall should be destroyed
 	public void DestroyWall(int x, int y, int direction) {
 		TileClass tile = GetTileAtCoordinate (x, y).GetComponent<TileClass>();
-		TileClass otherTile = GetNeighbouringTile (x, y, direction).GetComponent<TileClass>();
+		GameObject obj = GetNeighbouringTile (x, y, direction);
+		TileClass otherTile = null;
+		if (obj != null) {
+			otherTile = obj.GetComponent<TileClass>();
+		}
 		GameObject wall = null;
 
 		int opposite = TileClass.getOppositeDirection (direction);
-		if (otherTile.HasWall (opposite)) {
+		if (otherTile != null && otherTile.HasWall (opposite)) {
 			wall = otherTile.GetWall(opposite);
 			otherTile.SetWall(opposite, null);
 		}
@@ -260,6 +301,17 @@ public class GameboardController : MonoBehaviour {
 		return null;
 	}
 
+	public TileClass GetNeighbourTileClass(int x, int y, int direction) {
+		GameObject obj = GetNeighbouringTile (x, y, direction);
+		if (obj != null) {
+			TileClass tc = obj.GetComponent<TileClass>();
+			if (tc != null) {
+				return tc;
+			}
+		}
+		return null;
+	}
+
 	public GameObject GetTileAtCoordinate(int x, int y){
 		if (x < 0 || y < 0 || x >= width || y >= height) {
 			return null;
@@ -268,5 +320,25 @@ public class GameboardController : MonoBehaviour {
 	}
 	public GameObject GetTileAtCoordinate(float x, float y){
 		return GetTileAtCoordinate ((int)x, (int)y);
+	}
+
+	public TileClass GetTileClassAtCoordinate(int x, int y) {
+		GameObject obj = GetTileAtCoordinate (x, y);
+		if (obj != null) {
+			TileClass tc = obj.GetComponent<TileClass>();
+			if (tc != null) {
+				return tc;
+			}
+		}
+		return null;
+	}
+
+	public TileClass GetTileClassAtCoordinate(float x, float y) {
+		return GetTileClassAtCoordinate ((int)x, (int)y);
+	}
+
+	public void EndGame(int player) {
+		gameEnded = true;
+		winner = player;
 	}
 }

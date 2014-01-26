@@ -9,6 +9,7 @@ public class ObjectStore : MonoBehaviour {
 	public GameObject projectile2;
 	public GameObject projectile3;
 	public AudioClip shootSound;
+
 	// Use this for initialization
 	void Start () {
 	

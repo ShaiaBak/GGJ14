@@ -115,9 +115,14 @@ public class PlayerInputClass : MonoBehaviour {
 				{
 					Debug.Log("SIMULATION: Executing Cycle: " + BoardActionCycle);
 					// DO ALL CURRENT ACTIONS IN CYCLE
+					// We're running two loops - the first runs all commands that are moves, the second runs the remaining actions
 					for (int i = 0; i < GBCommands.Length; i++)
 					{
-						ExecuteGBCommand(GBCommands[i], BoardActionCycle);
+						ExecuteGBCommand(GBCommands[i], BoardActionCycle, true, false);
+					}
+					for (int i = 0; i < GBCommands.Length; i++)
+					{
+						ExecuteGBCommand(GBCommands[i], BoardActionCycle, false, true);
 					}
 
 					BoardActionCycle++;
@@ -225,50 +230,88 @@ public class PlayerInputClass : MonoBehaviour {
 		}
 	}
 
-	void ExecuteGBCommand(GameboardCommand GBCom, int CurrCycle)
+	// ONLY execute move if true, ONLY execute action if true
+	// NOTE: ZACKM - THIS IS HORRENDOUS CODE. OH MY GOODNESS GRACIOUS!
+	void ExecuteGBCommand(GameboardCommand GBCom, int CurrCycle, bool bExecuteMove, bool bExecuteAction)
 	{
 		CardCommand CommandToExecute = GBCom.GetCard().GetCommands()[CurrCycle];
 
 		switch (CommandToExecute)
 		{
 			case CardCommand.CC_MoveLeft:
-				Debug.Log(GBCom.GetCharacter().tag + " moved left");
-				GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.WEST);
+				if (bExecuteMove)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " moved left");
+					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.WEST);
+				}
 				break;
+
 			case CardCommand.CC_MoveRight:
-				Debug.Log(GBCom.GetCharacter().tag + " moved right");
-				GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.EAST);
+				if (bExecuteMove)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " moved right");
+					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.EAST);
+				}
 				break;
+
 			case CardCommand.CC_MoveUp:
-				Debug.Log(GBCom.GetCharacter().tag + " moved up");
-				GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.NORTH);
+				if (bExecuteMove)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " moved up");
+					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.NORTH);
+				}
 				break;
+
 			case CardCommand.CC_MoveDown:
-				Debug.Log(GBCom.GetCharacter().tag + " moved down");
-				GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.SOUTH);
+				if (bExecuteMove)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " moved down");
+					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.SOUTH);
+				}
 				break;
+
 			case CardCommand.CC_AttackAdj:
-				Debug.Log(GBCom.GetCharacter().tag + " attacked adjacently");
-				GBController.CharacterSwipe(GBCom.GetCharacter());
+				if (bExecuteAction)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " attacked adjacently");
+					GBController.CharacterSwipe(GBCom.GetCharacter());
+				}
 				break;
+
 			case CardCommand.CC_ShootLeft:
-				Debug.Log(GBCom.GetCharacter().tag + " shot to the left");
-				GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.WEST);
+				if (bExecuteAction)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " shot to the left");
+					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.WEST);
+				}
 				break;
+
 			case CardCommand.CC_ShootRight:
-				Debug.Log(GBCom.GetCharacter().tag + " shot to the right");
-				GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.EAST);
+				if (bExecuteAction)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " shot to the right");
+					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.EAST);
+				}
 				break;
 			case CardCommand.CC_ShootUp:
-				Debug.Log(GBCom.GetCharacter().tag + " shot up");
-				GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.NORTH);
+				if (bExecuteAction)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " shot up");
+					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.NORTH);
+				}
 				break;
 			case CardCommand.CC_ShootDown:
-				Debug.Log(GBCom.GetCharacter().tag + " shot down");
-				GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.SOUTH);
+				if (bExecuteAction)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " shot down");
+					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.SOUTH);
+				}
 				break;
 			case CardCommand.CC_HoldPosition:
-				Debug.Log(GBCom.GetCharacter().tag + " did not move");
+				if (bExecuteMove)
+				{
+					Debug.Log(GBCom.GetCharacter().tag + " did not move");
+				}
 				break;
 		}
 	}
