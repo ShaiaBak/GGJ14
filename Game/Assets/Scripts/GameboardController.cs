@@ -44,11 +44,9 @@ public class GameboardController : MonoBehaviour {
 				int ydn = Mathf.FloorToInt(y);
 				int yup = Mathf.CeilToInt(y);
 				if (ydn >= 0) {
-//					print ("Tile (" + (int)x + "," + ydn + ") add north wall");
 					tileArray[(int) x, ydn].GetComponent<TileClass>().SetWall(TileClass.NORTH, o);
 				}
 				if (yup < height) {
-//					print ("Tile (" + (int)x + "," + yup + ") add south wall");
 					tileArray[(int) x, yup].GetComponent<TileClass>().SetWall(TileClass.SOUTH, o);
 				}
 			}
@@ -57,11 +55,9 @@ public class GameboardController : MonoBehaviour {
 				int xdn = Mathf.FloorToInt(x);
 				int xup = Mathf.CeilToInt(x);
 				if (xdn >= 0) {
-//					print ("Tile (" + xdn + "," + (int)y + ") add east wall");
 					tileArray[xdn, (int) y].GetComponent<TileClass>().SetWall(TileClass.EAST, o);
 				}
 				if (xup < width) {
-//					print ("Tile (" + xup + "," + (int)y + ") add west wall");
 					tileArray[xup, (int) y].GetComponent<TileClass>().SetWall(TileClass.WEST, o);
 				}
 			}
@@ -73,8 +69,30 @@ public class GameboardController : MonoBehaviour {
 
 	}
 
-	public void MoveCharacter(GameObject player, int direction) {
-		player.GetComponent<CharacterClass>().Move(direction);
+	/// <summary>
+	/// Moves the character one space in a direction.
+	/// </summary>
+	/// <param name="character">Character.</param>
+	/// <param name="direction">Direction. eg. (MoveCharacter(player0, TileClass.NORTH))</param>
+	public void MoveCharacter(GameObject character, int direction) {
+		character.GetComponent<CharacterClass>().Move(direction);
+	}
+
+	/// <summary>
+	/// Makes the character attack in all four adjacent spaces.
+	/// </summary>
+	/// <param name="character">Character.</param>
+	public void CharacterSwipe(GameObject character){
+		character.GetComponent<CharacterActionsClass>().Swipe();
+	}
+
+	/// <summary>
+	/// Makes the character shoot in a direction. Bullets will stop on collision.
+	/// </summary>
+	/// <param name="character">Character.</param>
+	/// <param name="direction">Direction. eg. (CharacterShoot(player0, TileClass.NORTH))</param>
+	public void CharacterShoot(GameObject character, int direction){
+		character.GetComponent<CharacterActionsClass>().Shoot(direction);
 	}
 
 	public void AttackTile(GameObject tile){

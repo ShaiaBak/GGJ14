@@ -8,18 +8,65 @@ enum GameState
 	GS_INMENU
 };
 
+public struct GameboardCommand
+{
+	private GameObject Character;
+	private Card CommandsCard;
+
+	public GameboardCommand(GameObject CharacterRef, Card ComCard)
+	{
+		Character = CharacterRef;
+		CommandsCard = ComCard;
+	}
+
+	public GameObject GetCharacter()
+	{
+		return Character;
+	}
+
+	public Card GetCard()
+	{
+		return CommandsCard;
+	}
+}
+
+// WRONG NAME; SHOULD BE MAIN.CPP
 public class PlayerInputClass : MonoBehaviour {
 
 	GameState GS;
 
+	private GameObject Board;
+	private GameboardController GBController;
+	private CardManager CManager;
+	private GameObject P1Character;
+	private GameObject P2Character;
+	private GameObject[] NPCCharacters;
+
 	private int P1CurrentChoice;
 	private int P2CurrentChoice;
+	private int[] NPCCurrentChoices;
 
 	private string[] P1InputNames;
 	private string[] P2InputNames;
 
+	const float BOARDUPDATECYCLE = 2.0f;
+	float BoardUpdateTime = 0.0f;
+	int BoardActionCycle = 0;
+
+	private GameboardCommand[] GBCommands;
+
 	// Use this for initialization
 	void Start () {
+
+		Board = GameObject.FindGameObjectWithTag("Gameboard");
+		GBController = Board.GetComponent<GameboardController>();
+		P1Character = GameObject.FindGameObjectWithTag("P1");
+		P2Character = GameObject.FindGameObjectWithTag("P2");
+		NPCCharacters = GameObject.FindGameObjectsWithTag("Character");
+
+		CManager = Camera.main.GetComponent<CardManager>();
+
+		NPCCurrentChoices = new int[NPCCharacters.Length];
 
 		GS = GameState.GS_AWAITING_INPUT;
 		P1CurrentChoice = -1;
@@ -45,9 +92,39 @@ public class PlayerInputClass : MonoBehaviour {
 			// Pass off to the game board when both players have made a choice
 			if (P1CurrentChoice != -1 && P2CurrentChoice != -1)
 			{
-				SendInputsToBoard();
+				PackageActionsForBoard();
 			}
 		}
+		else if (GS == GameState.GS_SIMULATING)
+		{
+			if (BoardUpdateTime >= BOARDUPDATECYCLE)
+			{
+				if (BoardActionCycle >= 2) // Magic Number, but 2 is just for two actions/cycles
+				{
+					Debug.Log("SIMULATION: Finishing Cycle, going back to Input");
+					// We're done simulating, wait for input again
+					GS = GameState.GS_AWAITING_INPUT;
+					CManager.GenerateCardPool();
+				}
+				else
+				{
+					Debug.Log("SIMULATION: Executing Cycle: " + BoardActionCycle);
+					// DO ALL CURRENT ACTIONS IN CYCLE
+					for (int i = 0; i < GBCommands.Length; i++)
+					{
+						ExecuteGBCommand(GBCommands[i], BoardActionCycle);
+					}
+
+					BoardActionCycle++;
+					BoardUpdateTime = 0.0f;
+				}
+			}
+			else
+			{
+				BoardUpdateTime += Time.deltaTime;
+			}
+		}
+	
 	}
 
 	void FindPlayerInputs()
@@ -81,13 +158,37 @@ public class PlayerInputClass : MonoBehaviour {
 		}
 	}
 
-	void SendInputsToBoard()
+	void FindNPCInputs()
 	{
+		// Make arbitrary choices for NPCs from the card pool
+		for (int i = 0; i < NPCCurrentChoices.Length; i++)
+		{
+			NPCCurrentChoices[i] = Random.Range(0, 6); // 6 is magic number == to CARDPOOLMAX in CardManager
+			// TODO: ZackM - Fix.
+		}
+	}
+
+	void PackageActionsForBoard()
+	{
+		FindNPCInputs();
+
 		// Figure out how to set appropriate cards based on inputs here
 		GS = GameState.GS_SIMULATING;
-		print("Inputs accepted!");
+		print("INPUT: Inputs accepted! Starting sim...");
 
-		// Set to simulating, have the board do a callback to set the enum when it's done simming
+		// Find the Card Manager, get associated cards with our indexes
+		GBCommands = new GameboardCommand[NPCCurrentChoices.Length + 2]; // # of NPC's plus 2 players
+		GBCommands[0] = new GameboardCommand( P1Character, CManager.GetCardFromCurrentPool(P1CurrentChoice));
+		GBCommands[1] = new GameboardCommand( P2Character, CManager.GetCardFromCurrentPool(P2CurrentChoice));
+
+		for (int i = 2; i < GBCommands.Length; i++)
+		{
+			GBCommands[i] = new GameboardCommand(NPCCharacters[i-2], CManager.GetCardFromCurrentPool(NPCCurrentChoices[i+2]));
+		}
+
+		BoardActionCycle = 0;
+		BoardUpdateTime = BOARDUPDATECYCLE;
+			                                                                         	
 	}
 
 	void ResetInputs()
@@ -98,8 +199,43 @@ public class PlayerInputClass : MonoBehaviour {
 		print("Reset player inputs.");
 	}
 
-	public void PingForNextInputs()
+	void ExecuteGBCommand(GameboardCommand GBCom, int CurrCycle)
 	{
+		CardCommand CommandToExecute = GBCom.GetCard().GetCommands()[CurrCycle];
 
+		switch (CommandToExecute)
+		{
+			case CardCommand.CC_MoveLeft:
+
+					break;
+			case CardCommand.CC_MoveRight:
+
+					break;
+			case CardCommand.CC_MoveUp:
+
+					break;
+			case CardCommand.CC_MoveDown:
+
+					break;
+			case CardCommand.CC_AttackAdj:
+
+					break;
+			case CardCommand.CC_ShootLeft:
+
+					break;
+			case CardCommand.CC_ShootRight:
+
+					break;
+			case CardCommand.CC_ShootUp:
+
+					break;
+			case CardCommand.CC_ShootDown:
+
+					break;
+			case CardCommand.CC_HoldPosition:
+
+					break;
+				};
+		
 	}
 }
