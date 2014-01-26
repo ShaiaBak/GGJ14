@@ -22,12 +22,25 @@ public class CardActorClass : MonoBehaviour {
 
 	public void SetupUserInterface(CardCommand FirstCom, CardCommand SecondCom)
 	{
-	
-		// TODO: Stretch goal, don't choose colours randomly, choose based on what actions on card
-
 		// Dynamically generates action icons based on card info passed in
-		int ChooseBase = Random.Range(0,2);
+		int ChooseBase = 0;
+
+		// Use blue card base if both actions are moves, red otherwise
+		if ( (FirstCom == CardCommand.CC_MoveLeft || 
+		      FirstCom == CardCommand.CC_MoveRight || 
+		      FirstCom == CardCommand.CC_MoveUp || 
+		      FirstCom == CardCommand.CC_MoveDown ) 
+			 && 
+		    (SecondCom == CardCommand.CC_MoveLeft || 
+		 	 SecondCom == CardCommand.CC_MoveRight || 
+		 	 SecondCom == CardCommand.CC_MoveUp || 
+		 	 SecondCom == CardCommand.CC_MoveDown) )
+		{
+			ChooseBase = 1;
+		}
+
 		renderer.material = BaseMaterials[ChooseBase];
+
 
 		if ((int) FirstCom < CommandTextures.Length && FirstCommand != null)
 		{
