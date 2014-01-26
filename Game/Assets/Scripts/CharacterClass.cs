@@ -9,7 +9,7 @@ public class CharacterClass : MonoBehaviour {
 	TileClass nextTile;
 	float t = 0;
 	private bool isDead = false;
-	private float endTimer = 5f;
+	private float endTimer = 3f;
 
 	// Use this for initialization
 	void Start () {
