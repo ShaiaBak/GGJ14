@@ -92,9 +92,9 @@ public class CharacterClass : MonoBehaviour {
 		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
 
 		if(tag == "P1"){
-			gameboard.EndGame(1);
+			gameboard.EndGame (1);
 		}else if(tag == "P2"){
-			gameboard.EndGame(2);
+			gameboard.EndGame (2);
 		}
 		tag = "Untagged";
 		foreach(MonoBehaviour mb in GetComponents<MonoBehaviour>()){
