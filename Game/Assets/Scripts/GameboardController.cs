@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class GameboardController : MonoBehaviour {
 
@@ -62,11 +63,35 @@ public class GameboardController : MonoBehaviour {
 				}
 			}
 		}
+		RandomizePlayerLocations();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
+	}
+
+	private void RandomizePlayerLocations(){
+		List<GameObject> characterList = new List<GameObject>();
+		characterList.AddRange(GameObject.FindGameObjectsWithTag("Character"));
+		characterList.AddRange(GameObject.FindGameObjectsWithTag("P1"));
+		characterList.AddRange(GameObject.FindGameObjectsWithTag("P2"));
+		// Get 2 different index
+		int i = Random.Range(0,characterList.Count);
+		int j = 0;
+		while(j == i){
+			j = Random.Range(0,characterList.Count);
+		}
+		// Retag everything
+		for(int x=0; x<characterList.Count; x++){
+			if(x == i){
+				characterList[x].tag = "P1";
+			}else if(x == j){
+				characterList[x].tag = "P2";
+			}else{
+				characterList[x].tag = "Character";
+			}
+		}
 	}
 
 	/// <summary>
