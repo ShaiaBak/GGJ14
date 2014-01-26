@@ -49,6 +49,13 @@ public class PlayerInputClass : MonoBehaviour {
 	private string[] P1InputNames;
 	private string[] P2InputNames;
 
+	public GameObject P1LockInObj;
+	public GameObject P2LockInObj;
+	public Texture P1Waiting;
+	public Texture P2Waiting;
+	public Texture P1Locked;
+	public Texture P2Locked;
+
 	const float BOARDUPDATECYCLE = 2.0f;
 	float BoardUpdateTime = 0.0f;
 	int BoardActionCycle = 0;
@@ -68,9 +75,7 @@ public class PlayerInputClass : MonoBehaviour {
 
 		NPCCurrentChoices = new int[NPCCharacters.Length];
 
-		GS = GameState.GS_AWAITING_INPUT;
-		P1CurrentChoice = -1;
-		P2CurrentChoice = -1;
+		ResetInputs();
 
 		P1InputNames = new string[6] {"P1_Choose1", "P1_Choose2", "P1_Choose3", "P1_Choose4", "P1_Choose5", "P1_Choose6" };
 		P2InputNames = new string[6] {"P2_Choose1", "P2_Choose2", "P2_Choose3", "P2_Choose4", "P2_Choose5", "P2_Choose6" };
@@ -138,6 +143,12 @@ public class PlayerInputClass : MonoBehaviour {
 				{
 					P1CurrentChoice = i;
 					print(P1InputNames[i] + " pressed by P1."); // Debugging stub
+
+					if (P1LockInObj != null)
+					{
+						P1LockInObj.renderer.material.mainTexture = P1Locked;
+					}
+
 					break;
 				}
 			}
@@ -152,6 +163,12 @@ public class PlayerInputClass : MonoBehaviour {
 				{
 					P2CurrentChoice = i;
 					print(P2InputNames[i] + " pressed by P2."); // Debugging stub
+
+					if (P2LockInObj != null)
+					{
+						P2LockInObj.renderer.material.mainTexture = P2Locked;
+					}
+
 					break;
 				}
 			}
@@ -193,10 +210,19 @@ public class PlayerInputClass : MonoBehaviour {
 
 	void ResetInputs()
 	{
+		print("Reset player inputs.");
 		GS = GameState.GS_AWAITING_INPUT;
 		P1CurrentChoice = -1;
 		P2CurrentChoice = -1;
-		print("Reset player inputs.");
+
+		if (P1LockInObj != null)
+		{
+			P1LockInObj.renderer.material.mainTexture = P1Waiting;
+		}
+		if (P2LockInObj != null)
+		{
+			P2LockInObj.renderer.material.mainTexture = P2Waiting;
+		}
 	}
 
 	void ExecuteGBCommand(GameboardCommand GBCom, int CurrCycle)
