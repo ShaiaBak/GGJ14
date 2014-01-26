@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3300000}
   - 64: {fileID: 6400000}
   - 23: {fileID: 2300000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: UI_PlayerLockIn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 8.19563866e-08, y: .707106769, z: -.707106829, w: -1.25379529e-07}
-  m_LocalPosition: {x: -.921554744, y: 5.18462563, z: -.5}
+  m_LocalPosition: {x: -.906429291, y: 5.22588778, z: -.649999976}
   m_LocalScale: {x: .075000003, y: 1, z: .09375}
   m_Children: []
   m_Father: {fileID: 0}

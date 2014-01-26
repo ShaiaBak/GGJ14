@@ -57,6 +57,7 @@ public class CharacterActionsClass : MonoBehaviour {
 
 	public void Shoot(int direction){
 		anim.SetTrigger ("Attack");
+		audio.PlayOneShot (Camera.main.GetComponent<ObjectStore> ().shootSound);
 		switch(direction){
 
 		case TileClass.NORTH:
