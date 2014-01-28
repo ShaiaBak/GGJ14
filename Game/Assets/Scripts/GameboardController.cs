@@ -11,10 +11,6 @@ public class GameboardController : MonoBehaviour {
 	private float endGameTimer = 3f;
 	private int winner = -1;
 
-	private bool gameEnded;
-	private float endGameTimer = 3f;
-	private int winner = -1;
-
 	// Use this for initialization
 	void Awake () {
 		width = 0;
