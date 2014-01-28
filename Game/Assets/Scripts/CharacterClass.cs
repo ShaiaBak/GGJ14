@@ -101,9 +101,9 @@ public class CharacterClass : MonoBehaviour {
 			}
 		} else {
 			if (tag == "P1") {
-				gameboard.EndGame(1);
-			} else if (tag == "P2") {
 				gameboard.EndGame(2);
+			} else if (tag == "P2") {
+				gameboard.EndGame(1);
 			}
 		}
 		tag = "Untagged";
