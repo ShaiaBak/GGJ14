@@ -86,10 +86,10 @@ public class GameboardController : MonoBehaviour {
 			if (endGameTimer < 0) {
 				switch(winner) {
 				case 1:
-					Application.LoadLevel (4);
+					Application.LoadLevel ("player1win");
 					break;
 				case 2:
-					Application.LoadLevel (3);
+					Application.LoadLevel ("player2win");
 					break;
 				}
 			}
