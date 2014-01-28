@@ -215,9 +215,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hWall: {fileID: 100000, guid: 468244ac13105a14197eaef548472e13, type: 2}
   vWall: {fileID: 100000, guid: 5daadbd7e78ba5b4e91aa2ee82079975, type: 2}
-  projectile1: {fileID: 0}
-  projectile2: {fileID: 0}
-  projectile3: {fileID: 0}
+  projectile1: {fileID: 100000, guid: 7284b382554759446acc3ec6c3ce656c, type: 2}
+  projectile2: {fileID: 100000, guid: b102651fd2bbbdc4f832423438199571, type: 2}
+  projectile3: {fileID: 100000, guid: d5221948b9c4d82458029e5eedaa06d3, type: 2}
   shootSound: {fileID: 8300000, guid: 611bc788e07d7114f932506fc7d6df7b, type: 3}
 --- !u!114 &5226727
 MonoBehaviour:

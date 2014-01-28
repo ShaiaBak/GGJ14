@@ -160,17 +160,17 @@ public class PlayerInputClass : MonoBehaviour {
 		}
 
 		// Find out what player two is pressing
-		if (P2CurrentChoice == -1)
-		{
-			for (int i = 0; i < P2InputNames.Length; i++)
-			{
-				if (Input.GetButtonDown(P2InputNames[i]))
-				{
+		if (GBController.IsSPMode()) {
+			// Player two is pressing a random key
+			P2CurrentChoice = Random.Range (0, 6);
+			P2LockInObj.renderer.material.mainTexture = P2Locked;
+		} else if (P2CurrentChoice == -1) {
+			for (int i = 0; i < P2InputNames.Length; i++) {
+				if (Input.GetButtonDown (P2InputNames [i])) {
 					P2CurrentChoice = i;
-					print(P2InputNames[i] + " pressed by P2."); // Debugging stub
+					print (P2InputNames [i] + " pressed by P2."); // Debugging stub
 
-					if (P2LockInObj != null)
-					{
+					if (P2LockInObj != null) {
 						P2LockInObj.renderer.material.mainTexture = P2Locked;
 					}
 

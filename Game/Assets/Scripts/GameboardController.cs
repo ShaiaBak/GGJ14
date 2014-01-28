@@ -10,6 +10,8 @@ public class GameboardController : MonoBehaviour {
 	private bool gameEnded = false;
 	private float endGameTimer = 3f;
 	private int winner = -1;
+	private bool spMode = false;
+	private int numCharacters;
 
 	// Use this for initialization
 	void Awake () {
@@ -75,6 +77,10 @@ public class GameboardController : MonoBehaviour {
 			Application.LoadLevel("MainMenu");
 		}
 
+		if (Input.GetKeyUp (KeyCode.Tab)) {
+			spMode = !spMode;
+		}
+
 		if (gameEnded) {
 			endGameTimer -= Time.deltaTime;
 			if (endGameTimer < 0) {
@@ -95,11 +101,12 @@ public class GameboardController : MonoBehaviour {
 		characterList.AddRange(GameObject.FindGameObjectsWithTag("Character"));
 		characterList.AddRange(GameObject.FindGameObjectsWithTag("P1"));
 		characterList.AddRange(GameObject.FindGameObjectsWithTag("P2"));
+		numCharacters = characterList.Count;
 		// Get 2 different index
-		int i = Random.Range(0,characterList.Count);
+		int i = Random.Range (0, numCharacters);
 		int j = 0;
 		do {
-			j = Random.Range (0, characterList.Count);
+			j = Random.Range (0, numCharacters);
 		} while (j == i);
 
 		// Retag everything
@@ -335,6 +342,18 @@ public class GameboardController : MonoBehaviour {
 
 	public TileClass GetTileClassAtCoordinate(float x, float y) {
 		return GetTileClassAtCoordinate ((int)x, (int)y);
+	}
+
+	public bool IsSPMode() {
+		return spMode;
+	}
+
+	public int getNumCharacters() {
+		return numCharacters;
+	}
+
+	public void characterDied() {
+		numCharacters--;
 	}
 
 	public void EndGame(int player) {

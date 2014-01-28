@@ -90,11 +90,21 @@ public class CharacterClass : MonoBehaviour {
 		Debug.Log (tag + " Died");
 		isDead = true;
 		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
+		nextTile.entity = null;
+		gameboard.characterDied();
 
-		if(tag == "P1"){
-			gameboard.EndGame(1);
-		}else if(tag == "P2"){
-			gameboard.EndGame(2);
+		if (gameboard.IsSPMode()) {
+			if (tag == "P1") {
+				gameboard.EndGame(2);
+			} else if(gameboard.getNumCharacters() < 2) {
+				gameboard.EndGame(1);
+			}
+		} else {
+			if (tag == "P1") {
+				gameboard.EndGame(1);
+			} else if (tag == "P2") {
+				gameboard.EndGame(2);
+			}
 		}
 		tag = "Untagged";
 		foreach(MonoBehaviour mb in GetComponents<MonoBehaviour>()){
