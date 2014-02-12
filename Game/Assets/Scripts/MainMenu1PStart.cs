@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MainMenuStart : MonoBehaviour {
+public class MainMenu1PStart : MonoBehaviour {
 
 	void OnMouseDown() {
-		PlayerPrefs.SetInt("1PMode",0);;
+		PlayerPrefs.SetInt("1PMode",1);
 		Destroy (GameObject.FindWithTag("MainMenu"));
 		Application.LoadLevelAdditive("InstructionScreen");
 	}
@@ -12,7 +12,7 @@ public class MainMenuStart : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Return)) {
-			PlayerPrefs.SetInt("1PMode",0);
+			PlayerPrefs.SetInt("1PMode",1);
 			Destroy (GameObject.FindWithTag("MainMenu"));
 			Application.LoadLevel("InstructionScreen");
 		}

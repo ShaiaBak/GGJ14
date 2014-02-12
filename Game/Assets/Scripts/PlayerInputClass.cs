@@ -160,7 +160,7 @@ public class PlayerInputClass : MonoBehaviour {
 		}
 
 		// Find out what player two is pressing
-		if (GBController.IsSPMode()) {
+		if (GBController.IsSPMode() == 1) {
 			// Player two is pressing a random key
 			P2CurrentChoice = Random.Range (0, 6);
 			P2LockInObj.renderer.material.mainTexture = P2Locked;

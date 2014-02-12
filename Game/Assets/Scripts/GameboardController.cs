@@ -10,11 +10,12 @@ public class GameboardController : MonoBehaviour {
 	private bool gameEnded = false;
 	private float endGameTimer = 3f;
 	private int winner = -1;
-	private bool spMode = false;
+	private int spMode = -1;
 	private int numCharacters;
 
 	// Use this for initialization
 	void Awake () {
+		spMode = PlayerPrefs.GetInt("1PMode");
 		width = 0;
 		height = 0;
 		GameObject[] array = GameObject.FindGameObjectsWithTag("Tile");
@@ -77,9 +78,9 @@ public class GameboardController : MonoBehaviour {
 			Application.LoadLevel("MainMenu");
 		}
 
-		if (Input.GetKeyUp (KeyCode.Tab)) {
-			spMode = !spMode;
-		}
+//		if (Input.GetKeyUp (KeyCode.Tab)) {
+//			spMode = !spMode;
+//		}
 
 		if (gameEnded) {
 			endGameTimer -= Time.deltaTime;
@@ -344,7 +345,7 @@ public class GameboardController : MonoBehaviour {
 		return GetTileClassAtCoordinate ((int)x, (int)y);
 	}
 
-	public bool IsSPMode() {
+	public int IsSPMode() {
 		return spMode;
 	}
 

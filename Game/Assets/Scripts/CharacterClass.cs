@@ -93,7 +93,7 @@ public class CharacterClass : MonoBehaviour {
 		nextTile.entity = null;
 		gameboard.characterDied();
 
-		if (gameboard.IsSPMode()) {
+		if (gameboard.IsSPMode() == 1) {
 			if (tag == "P1") {
 				gameboard.EndGame(2);
 			} else if(gameboard.getNumCharacters() < 2) {
