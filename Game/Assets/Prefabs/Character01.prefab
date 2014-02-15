@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a536d7eec7845647896c4710a4a331a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileobj: {fileID: 100000, guid: 7284b382554759446acc3ec6c3ce656c, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

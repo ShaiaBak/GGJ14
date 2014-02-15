@@ -114,6 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a536d7eec7845647896c4710a4a331a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileobj: {fileID: 100000, guid: b102651fd2bbbdc4f832423438199571, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
