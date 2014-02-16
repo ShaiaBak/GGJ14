@@ -10,11 +10,11 @@ public class MainMenuStart : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown (KeyCode.Return)) {
-			PlayerPrefs.SetInt("1PMode",0);
-			Destroy (GameObject.FindWithTag("MainMenu"));
-			Application.LoadLevel("InstructionScreen");
-		}
-	}
+//	void Update () {
+//		if (Input.GetKeyDown (KeyCode.Return) ) {
+//			PlayerPrefs.SetInt("1PMode",0);
+//			Destroy (GameObject.FindWithTag("MainMenu"));
+//			Application.LoadLevel("InstructionScreen");
+//		}
+//	}
 }
