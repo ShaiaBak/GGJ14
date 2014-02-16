@@ -8,11 +8,11 @@ public class GameSelector : MonoBehaviour {
 
 	void Update () {
 		if (bSingleMode && Input.GetKeyDown (KeyCode.DownArrow) ) {
-			transform.position = new Vector2 (transform.position.x, transform.position.y - 1f);
+			transform.position = new Vector2 (transform.position.x, transform.position.y - 0.87f);
 			bSingleMode = !bSingleMode;
 		}
 		if (!bSingleMode && Input.GetKeyDown (KeyCode.UpArrow) ) {
-			transform.position = new Vector2 (transform.position.x, transform.position.y + 1f);
+			transform.position = new Vector2 (transform.position.x, transform.position.y + 0.87f);
 			bSingleMode = !bSingleMode;
 		}
 		if (Input.GetKeyDown (KeyCode.Return)) {
