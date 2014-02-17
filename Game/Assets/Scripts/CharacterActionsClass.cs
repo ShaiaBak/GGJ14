@@ -125,15 +125,12 @@ public class CharacterActionsClass : MonoBehaviour {
 			while(k>=0){
 				GameObject tile = gameboard.GetTileAtCoordinate(transform.position.x, k);
 				if(tile != null){
-					print ("x:" + transform.position.x + " y:"+ k + "pos:"+ tile.transform.position);
 					TileClass tc = tile.GetComponent<TileClass>();
 					if(gameboard.AttackTile(tile)){
-						print ("2");
 						target = tile.transform.position;
 						break;
 					}
 					if(tc.HasWall(TileClass.SOUTH)){
-						print ("1");
 						target = tile.transform.position;
 						break;
 					}

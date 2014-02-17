@@ -38,14 +38,14 @@ public struct Card
 			FirstCommand = (CardCommand) Random.Range(0, (int) CardCommand.CC_MoveDown + 1);
 			SecondCommand = (CardCommand) Random.Range(0, (int) CardCommand.CC_MoveDown + 1);
 
-			Debug.Log("Card Generated: 1st: " + FirstCommand.ToString() + ", 2nd: " + SecondCommand.ToString());
+//			Debug.Log("Card Generated: 1st: " + FirstCommand.ToString() + ", 2nd: " + SecondCommand.ToString());
 		}
 		else
 		{
 			FirstCommand = (CardCommand) Random.Range(0, (int) CardCommand.CC_LASTINDEX);
 			SecondCommand = (CardCommand) Random.Range(0, (int) CardCommand.CC_LASTINDEX);
 			
-			Debug.Log("Card Generated: 1st: " + FirstCommand.ToString() + ", 2nd: " + SecondCommand.ToString());
+//			Debug.Log("Card Generated: 1st: " + FirstCommand.ToString() + ", 2nd: " + SecondCommand.ToString());
 		}
 
 		// We need to prevent redundant movements - if it's redundant, we're just going to double up
@@ -69,7 +69,7 @@ public struct Card
 
 		if (bIsRedundant)
 		{ 
-			Debug.Log("Redundancy detected, doubling up move");
+//			Debug.Log("Redundancy detected, doubling up move");
 			SecondCommand = FirstCommand; 
 		}
 

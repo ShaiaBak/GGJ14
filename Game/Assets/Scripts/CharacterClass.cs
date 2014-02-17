@@ -87,25 +87,31 @@ public class CharacterClass : MonoBehaviour {
 	public void Die() {
 		anim.SetTrigger("Death");
 		audio.PlayOneShot (deathSound);
-		Debug.Log (tag + " Died");
 		isDead = true;
 		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
 		nextTile.entity = null;
 		gameboard.characterDied();
 
-		if (gameboard.IsSPMode() == 1) {
-			if (tag == "P1") {
-				gameboard.EndGame(2);
-			} else if(gameboard.getNumCharacters() < 2) {
-				gameboard.EndGame(1);
-			}
-		} else {
-			if (tag == "P1") {
-				gameboard.EndGame(2);
-			} else if (tag == "P2") {
-				gameboard.EndGame(1);
-			}
+//		if (gameboard.IsSPMode() == 1) {
+//			if (tag == "P1") {
+//				gameboard.EndGame(2);
+//			} else if(tag == "P2") {
+//				gameboard.EndGame(1);
+//			}
+//		} else {
+//			if (tag == "P1") {
+//				gameboard.EndGame(2);
+//			} else if (tag == "P2") {
+//				gameboard.EndGame(1);
+//			}
+//		}
+
+		if(tag == "P1"){
+			gameboard.player1 = null;
+		}else if(tag == "P2"){
+			gameboard.player2 = null;
 		}
+
 		tag = "Untagged";
 		foreach(MonoBehaviour mb in GetComponents<MonoBehaviour>()){
 			Destroy(mb);

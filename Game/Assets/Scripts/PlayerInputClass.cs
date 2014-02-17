@@ -107,6 +107,8 @@ public class PlayerInputClass : MonoBehaviour {
 				if (BoardActionCycle >= 2) // Magic Number, but 2 is just for two actions/cycles
 				{
 					Debug.Log("SIMULATION: Finishing Cycle, going back to Input");
+					// Check if we're in a gameover state
+					CheckGameover();
 					// We're done simulating, wait for input again
 					ResetInputs();
 					CManager.GenerateCardPool();
@@ -137,6 +139,29 @@ public class PlayerInputClass : MonoBehaviour {
 	
 	}
 
+	// Check if we're in a gameover state (ie p1 or p2 or both dead)
+	private void CheckGameover(){
+		// Both players dead
+		if(GBController.player1 == null && GBController.player2 == null){
+//			Application.LoadLevel ("tiescreen");
+			print("tie");
+		}
+		// Computer wins
+		else if(GBController.player1 == null && GBController.IsSPMode() == 1){
+//			Application.LoadLevel ("compwin");
+			print("computer wins");
+		}
+		// Player1 wins
+		else if(GBController.player2 == null){
+			Application.LoadLevel ("player1win");
+		}
+		// Player2 wins
+		else if(GBController.player1 == null){
+			Application.LoadLevel ("player2win");
+
+		}
+	}
+
 	void FindPlayerInputs()
 	{
 		// Find out what player one is pressing
@@ -147,7 +172,6 @@ public class PlayerInputClass : MonoBehaviour {
 				if (Input.GetButtonDown(P1InputNames[i]))
 				{
 					P1CurrentChoice = i;
-					print(P1InputNames[i] + " pressed by P1."); // Debugging stub
 
 					if (P1LockInObj != null)
 					{
@@ -168,7 +192,6 @@ public class PlayerInputClass : MonoBehaviour {
 			for (int i = 0; i < P2InputNames.Length; i++) {
 				if (Input.GetButtonDown (P2InputNames [i])) {
 					P2CurrentChoice = i;
-					print (P2InputNames [i] + " pressed by P2."); // Debugging stub
 
 					if (P2LockInObj != null) {
 						P2LockInObj.renderer.material.mainTexture = P2Locked;
@@ -215,7 +238,6 @@ public class PlayerInputClass : MonoBehaviour {
 
 	void ResetInputs()
 	{
-		print("Reset player inputs.");
 		GS = GameState.GS_AWAITING_INPUT;
 		P1CurrentChoice = -1;
 		P2CurrentChoice = -1;
@@ -241,7 +263,7 @@ public class PlayerInputClass : MonoBehaviour {
 			case CardCommand.CC_MoveLeft:
 				if (bExecuteMove)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " moved left");
+//					Debug.Log(GBCom.GetCharacter().tag + " moved left");
 					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.WEST);
 				}
 				break;
@@ -249,7 +271,7 @@ public class PlayerInputClass : MonoBehaviour {
 			case CardCommand.CC_MoveRight:
 				if (bExecuteMove)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " moved right");
+//					Debug.Log(GBCom.GetCharacter().tag + " moved right");
 					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.EAST);
 				}
 				break;
@@ -257,7 +279,7 @@ public class PlayerInputClass : MonoBehaviour {
 			case CardCommand.CC_MoveUp:
 				if (bExecuteMove)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " moved up");
+//					Debug.Log(GBCom.GetCharacter().tag + " moved up");
 					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.NORTH);
 				}
 				break;
@@ -265,7 +287,7 @@ public class PlayerInputClass : MonoBehaviour {
 			case CardCommand.CC_MoveDown:
 				if (bExecuteMove)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " moved down");
+//					Debug.Log(GBCom.GetCharacter().tag + " moved down");
 					GBController.MoveCharacter(GBCom.GetCharacter(), TileClass.SOUTH);
 				}
 				break;
@@ -273,7 +295,7 @@ public class PlayerInputClass : MonoBehaviour {
 			case CardCommand.CC_AttackAdj:
 				if (bExecuteAction)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " attacked adjacently");
+//					Debug.Log(GBCom.GetCharacter().tag + " attacked adjacently");
 					GBController.CharacterSwipe(GBCom.GetCharacter());
 				}
 				break;
@@ -281,7 +303,7 @@ public class PlayerInputClass : MonoBehaviour {
 			case CardCommand.CC_ShootLeft:
 				if (bExecuteAction)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " shot to the left");
+//					Debug.Log(GBCom.GetCharacter().tag + " shot to the left");
 					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.WEST);
 				}
 				break;
@@ -289,28 +311,28 @@ public class PlayerInputClass : MonoBehaviour {
 			case CardCommand.CC_ShootRight:
 				if (bExecuteAction)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " shot to the right");
+//					Debug.Log(GBCom.GetCharacter().tag + " shot to the right");
 					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.EAST);
 				}
 				break;
 			case CardCommand.CC_ShootUp:
 				if (bExecuteAction)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " shot up");
+//					Debug.Log(GBCom.GetCharacter().tag + " shot up");
 					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.NORTH);
 				}
 				break;
 			case CardCommand.CC_ShootDown:
 				if (bExecuteAction)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " shot down");
+//					Debug.Log(GBCom.GetCharacter().tag + " shot down");
 					GBController.CharacterShoot(GBCom.GetCharacter(), TileClass.SOUTH);
 				}
 				break;
 			case CardCommand.CC_HoldPosition:
 				if (bExecuteMove)
 				{
-					Debug.Log(GBCom.GetCharacter().tag + " did not move");
+//					Debug.Log(GBCom.GetCharacter().tag + " did not move");
 				}
 				break;
 		}

@@ -1447,6 +1447,10 @@ Prefab:
       propertyPath: projectileobj
       value: 
       objectReference: {fileID: 100000, guid: 7284b382554759446acc3ec6c3ce656c, type: 2}
+    - target: {fileID: 100000, guid: 901b95a5cda8d2a4da8d94310980ba0a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 901b95a5cda8d2a4da8d94310980ba0a, type: 2}
   m_RootGameObject: {fileID: 864054525}
@@ -6778,7 +6782,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &864054526
 Animator:
   serializedVersion: 2
@@ -8227,7 +8231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1013422127
 Animator:
   serializedVersion: 2
@@ -8300,7 +8304,7 @@ Transform:
   m_PrefabInternal: {fileID: 1956897283}
   m_GameObject: {fileID: 1013422126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 2.98923302, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1904219350}
@@ -11303,6 +11307,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 0
   height: 0
+  winner: -1
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!4 &1356228333
 Transform:
   m_ObjectHideFlags: 0
@@ -12071,6 +12078,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2798f52329cd82147a3493d45a47e017, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2798f52329cd82147a3493d45a47e017, type: 2}
   m_RootGameObject: {fileID: 1472185947}
@@ -12513,7 +12524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1472185948
 Animator:
   serializedVersion: 2
@@ -15952,8 +15963,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 888215080}
   - {fileID: 864054530}
+  - {fileID: 888215080}
   - {fileID: 1013422131}
   - {fileID: 1019575224}
   - {fileID: 1472185952}
@@ -16143,7 +16154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: abd91276b7e50c34aace193df5ef0635, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 2.98923302
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: abd91276b7e50c34aace193df5ef0635, type: 2}
       propertyPath: m_LocalPosition.z
@@ -16176,6 +16187,10 @@ Prefab:
     - target: {fileID: 400000, guid: abd91276b7e50c34aace193df5ef0635, type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: abd91276b7e50c34aace193df5ef0635, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: abd91276b7e50c34aace193df5ef0635, type: 2}

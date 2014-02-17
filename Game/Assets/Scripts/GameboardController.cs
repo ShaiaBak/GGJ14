@@ -9,9 +9,12 @@ public class GameboardController : MonoBehaviour {
 	public int height;
 	private bool gameEnded = false;
 	private float endGameTimer = 3f;
-	private int winner = -1;
+	public int winner = -1;
 	private int spMode = -1;
 	private int numCharacters;
+
+	public GameObject player1;
+	public GameObject player2;
 
 	// Use this for initialization
 	void Awake () {
@@ -70,6 +73,8 @@ public class GameboardController : MonoBehaviour {
 			}
 		}
 		RandomizePlayerLocations();
+		player1 = GameObject.FindGameObjectWithTag("P1");
+		player2 = GameObject.FindGameObjectWithTag("P2");
 	}
 	
 	// Update is called once per frame
@@ -83,17 +88,18 @@ public class GameboardController : MonoBehaviour {
 //		}
 
 		if (gameEnded) {
-			endGameTimer -= Time.deltaTime;
-			if (endGameTimer < 0) {
-				switch(winner) {
-				case 1:
-					Application.LoadLevel ("player1win");
-					break;
-				case 2:
-					Application.LoadLevel ("player2win");
-					break;
-				}
-			}
+			print ("winner: " + winner);
+//			endGameTimer -= Time.deltaTime;
+//			if (endGameTimer < 0) {
+//				switch(winner) {
+//				case 1:
+//					Application.LoadLevel ("player1win");
+//					break;
+//				case 2:
+//					Application.LoadLevel ("player2win");
+//					break;
+//				}
+//			}
 		}
 	}
 
@@ -357,8 +363,8 @@ public class GameboardController : MonoBehaviour {
 		numCharacters--;
 	}
 
-	public void EndGame(int player) {
-		gameEnded = true;
-		winner = player;
-	}
+//	public void EndGame(int player) {
+//		gameEnded = true;
+//		winner = player;
+//	}
 }
