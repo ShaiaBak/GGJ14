@@ -143,13 +143,12 @@ public class PlayerInputClass : MonoBehaviour {
 	private void CheckGameover(){
 		// Both players dead
 		if(GBController.player1 == null && GBController.player2 == null){
-//			Application.LoadLevel ("tiescreen");
+			Application.LoadLevel ("tiescreen");
 			print("tie");
 		}
 		// Computer wins
 		else if(GBController.player1 == null && GBController.IsSPMode() == 1){
-//			Application.LoadLevel ("compwin");
-			print("computer wins");
+			Application.LoadLevel ("compwin");
 		}
 		// Player1 wins
 		else if(GBController.player2 == null){

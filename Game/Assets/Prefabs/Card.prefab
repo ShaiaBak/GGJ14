@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
-  - 64: {fileID: 6400000}
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
   m_Layer: 8
@@ -62,8 +61,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: -1.15202333e-07, y: .707106769, z: -.707106888, w: -1.15202319e-07}
-  m_LocalPosition: {x: 1.56539774, y: .589951873, z: -.203683078}
-  m_LocalScale: {x: .100000001, y: 1, z: .129999995}
+  m_LocalPosition: {x: .793545783, y: -1.34345961, z: -3}
+  m_LocalScale: {x: .25, y: 1, z: .0549999997}
   m_Children:
   - {fileID: 400004}
   - {fileID: 400002}
@@ -74,9 +73,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_LocalRotation: {x: 8.94069672e-08, y: 3.13140731e-08, z: -1.41551212e-07, w: -1}
-  m_LocalPosition: {x: .267324239, y: .0633094013, z: 2.84123468}
-  m_LocalScale: {x: .750000179, y: 1, z: .288461626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.71000195, y: .0633097515, z: .0700000003}
+  m_LocalScale: {x: .349999994, y: 1, z: .649999976}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!4 &400004
@@ -85,9 +84,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: 8.94069672e-08, y: 3.13140731e-08, z: -1.41551212e-07, w: -1}
-  m_LocalPosition: {x: .267324239, y: .0633102432, z: -.769215703}
-  m_LocalScale: {x: .750000179, y: 1, z: .288461626}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.85987365, y: .063310504, z: .0700000003}
+  m_LocalScale: {x: .349999994, y: 1, z: .649999976}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!23 &2300000
@@ -174,19 +173,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!64 &6400000
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!64 &6400002
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -228,18 +214,18 @@ MonoBehaviour:
   SecondCommand: {fileID: 100002}
   BaseMaterials:
   - {fileID: 2100000, guid: 0fca758fd05414a80b3d255d624f8b32, type: 2}
-  - {fileID: 2100000, guid: 82c567adf65e44bbc82d80e9ee59df7f, type: 2}
+  - {fileID: 2100000, guid: 0fca758fd05414a80b3d255d624f8b32, type: 2}
   CommandTextures:
-  - {fileID: 2800000, guid: 3365ed356ed8b452e8cf68572d1cd768, type: 3}
-  - {fileID: 2800000, guid: cad00cf1c36994aa89d6dcd875222ba4, type: 3}
-  - {fileID: 2800000, guid: 4eda0033d30f24a4aa9b9d80306b128e, type: 3}
-  - {fileID: 2800000, guid: 7821b045f1f0846499204a7d42e1a3d1, type: 3}
-  - {fileID: 2800000, guid: c40796f77aec646afa5869801abdfc57, type: 3}
-  - {fileID: 2800000, guid: a052beb71ee6642898a561483f96116d, type: 3}
-  - {fileID: 2800000, guid: 2c662b508cf144c0981eb8428cdfa2f0, type: 3}
-  - {fileID: 2800000, guid: fad6c6d985dce4230a72f8177b476f85, type: 3}
-  - {fileID: 2800000, guid: d0e42d3a7f36746878baab10559a22b1, type: 3}
-  - {fileID: 2800000, guid: bbf6b41a6ace04dc293fba0889e382ac, type: 3}
+  - {fileID: 2800000, guid: 89c1b029173426a44abd8c01f7256e66, type: 3}
+  - {fileID: 2800000, guid: bea170b28ea0ebc4aaaf3780debffbd2, type: 3}
+  - {fileID: 2800000, guid: a9ee8f14fe83f364cbdccd42893cb7d9, type: 3}
+  - {fileID: 2800000, guid: 837063729b6f24a4cb0a1e4be7248e3e, type: 3}
+  - {fileID: 2800000, guid: 17e82d2eada7cd746a835dcddb20978e, type: 3}
+  - {fileID: 2800000, guid: e88c4e4c4cd4c6444a33487b3f7aa3de, type: 3}
+  - {fileID: 2800000, guid: 5a7a630a2201fed46933b0f2a711c186, type: 3}
+  - {fileID: 2800000, guid: c0d8d89198a4c054282e18d2bf211ee1, type: 3}
+  - {fileID: 2800000, guid: 1ff8eaed5efcaa3459cc2bbf278a86e7, type: 3}
+  - {fileID: 2800000, guid: e6ecc59a9698c144fadd9981e20de22b, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
