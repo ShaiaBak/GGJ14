@@ -4,6 +4,7 @@ using System.Collections;
 public class CharacterActionsClass : MonoBehaviour {
 
 	public GameObject projectileobj;
+	public GameObject meleeobj;
 	private GameboardController gameboard;
 	Animator anim;
 	// Use this for initialization
@@ -36,22 +37,22 @@ public class CharacterActionsClass : MonoBehaviour {
 		if(!tile.HasWall(TileClass.NORTH)){
 			Vector3 pos = new Vector2(transform.position.x, transform.position.y+1);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,90));
+			Instantiate(meleeobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,90));
 		}
 		if(!tile.HasWall(TileClass.EAST)){
 			Vector3 pos = new Vector2(transform.position.x+1, transform.position.y);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
+			Instantiate(meleeobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.identity);
 		}
 		if(!tile.HasWall(TileClass.SOUTH)){
 			Vector3 pos = new Vector2(transform.position.x, transform.position.y-1);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,-90));
+			Instantiate(meleeobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,-90));
 		}
 		if(!tile.HasWall(TileClass.WEST)){
 			Vector3 pos = new Vector2(transform.position.x-1, transform.position.y);
 			gameboard.AttackTile((int)pos.x, (int)pos.y);
-			Instantiate(projectileobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,180));
+			Instantiate(meleeobj, new Vector3((int)pos.x, (int)pos.y), Quaternion.Euler(0,0,180));
 		}
 
 	}
