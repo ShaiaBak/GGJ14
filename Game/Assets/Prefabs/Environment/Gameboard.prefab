@@ -40,6 +40,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 0
   height: 0
+  winner: -1
+  player1: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

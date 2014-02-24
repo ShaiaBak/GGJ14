@@ -8,7 +8,6 @@ public class GameboardController : MonoBehaviour {
 	public int width;
 	public int height;
 	private bool gameEnded = false;
-	private float endGameTimer = 3f;
 	public int winner = -1;
 	private int spMode = -1;
 	private int numCharacters;

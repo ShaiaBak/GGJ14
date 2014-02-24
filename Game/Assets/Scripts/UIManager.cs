@@ -23,27 +23,4 @@ public class UIManager : MonoBehaviour {
 	const int CARDFIRSTACTOFFSET = 40; //px
 	const int CARDSECONDACTOFFSET = 98; //px
 
-	// ** Textures
-	
-
-
-	// Notify bools
-	bool bRefreshCardUI;
-
-
-	// Use this for initialization
-	void Start () {
-		bRefreshCardUI = true;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		// Need to check for when a player has "Locked In" to signify
-
-	}
-
-	public void NotifyForCardRefresh()
-	{
-		bRefreshCardUI = true;
-	}
 }

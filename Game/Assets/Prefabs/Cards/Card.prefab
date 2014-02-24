@@ -30,7 +30,7 @@ GameObject:
   - 64: {fileID: 6400002}
   - 23: {fileID: 2300002}
   m_Layer: 8
-  m_Name: ActionPrefabs
+  m_Name: ActionPrefab1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

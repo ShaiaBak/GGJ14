@@ -18,7 +18,6 @@ public class AudioTrackSequence : MonoBehaviour {
 	IEnumerator MusicSequence(){
 		audioStart.Play();
 		yield return new WaitForSeconds(audioStart.clip.length + trackTransitionTime);
-		print ("loop");
 		audioLoop.Play();
 	}
 }
