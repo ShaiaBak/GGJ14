@@ -42,7 +42,7 @@ public class CharacterClass : MonoBehaviour {
 		t=0;
 		int x = (int) transform.position.x;
 		int y = (int) transform.position.y;
-
+		anim.SetTrigger("Walk");
 		switch(direction) {
 		case TileClass.NORTH:
 			y++;

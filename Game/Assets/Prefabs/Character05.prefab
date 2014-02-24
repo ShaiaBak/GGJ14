@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileobj: {fileID: 100000, guid: 1fdf05033e1022e4992c2577bad032e7, type: 2}
+  meleeobj: {fileID: 100000, guid: 821c2a1884896444998d2b772c67179a, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

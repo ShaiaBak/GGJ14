@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileobj: {fileID: 100000, guid: 7284b382554759446acc3ec6c3ce656c, type: 2}
+  meleeobj: {fileID: 100000, guid: 155adb3ebdb524149888ea6ed63423df, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
