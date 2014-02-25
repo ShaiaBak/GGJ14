@@ -48,12 +48,14 @@ public class CharacterClass : MonoBehaviour {
 			y++;
 			break;
 		case TileClass.EAST:
+			transform.localScale = new Vector3(1,1,1);
 			x++;
 			break;
 		case TileClass.SOUTH:
 			y--;
 			break;
 		case TileClass.WEST:
+			transform.localScale = new Vector3(-1,1,1);
 			x--;
 			break;
 		}
@@ -91,20 +93,6 @@ public class CharacterClass : MonoBehaviour {
 		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
 		nextTile.entity = null;
 		gameboard.characterDied();
-
-//		if (gameboard.IsSPMode() == 1) {
-//			if (tag == "P1") {
-//				gameboard.EndGame(2);
-//			} else if(tag == "P2") {
-//				gameboard.EndGame(1);
-//			}
-//		} else {
-//			if (tag == "P1") {
-//				gameboard.EndGame(2);
-//			} else if (tag == "P2") {
-//				gameboard.EndGame(1);
-//			}
-//		}
 
 		if(tag == "P1"){
 			gameboard.player1 = null;
