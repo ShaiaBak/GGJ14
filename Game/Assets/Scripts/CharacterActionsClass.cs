@@ -58,7 +58,7 @@ public class CharacterActionsClass : MonoBehaviour {
 	}
 
 	public void Shoot(int direction){
-		anim.SetTrigger ("Attack");
+		anim.SetTrigger ("Ranged");
 		audio.PlayOneShot (Camera.main.GetComponent<ObjectStore> ().shootSound);
 	
 		GameObject projectile = (GameObject) Instantiate(projectileobj, transform.position, Quaternion.identity);
@@ -114,6 +114,7 @@ public class CharacterActionsClass : MonoBehaviour {
 				}
 				j++;
 			}
+			transform.localScale = new Vector3(1,1,1);
 			break;
 
 		case TileClass.SOUTH:
@@ -163,6 +164,7 @@ public class CharacterActionsClass : MonoBehaviour {
 				}
 				l--;
 			}
+			transform.localScale = new Vector3(-1,1,1);
 			break;
 
 		}

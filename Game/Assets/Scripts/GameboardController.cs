@@ -81,25 +81,6 @@ public class GameboardController : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			Application.LoadLevel("MainMenu");
 		}
-
-//		if (Input.GetKeyUp (KeyCode.Tab)) {
-//			spMode = !spMode;
-//		}
-
-		if (gameEnded) {
-			print ("winner: " + winner);
-//			endGameTimer -= Time.deltaTime;
-//			if (endGameTimer < 0) {
-//				switch(winner) {
-//				case 1:
-//					Application.LoadLevel ("player1win");
-//					break;
-//				case 2:
-//					Application.LoadLevel ("player2win");
-//					break;
-//				}
-//			}
-		}
 	}
 
 	private void RandomizePlayerLocations(){
@@ -108,6 +89,7 @@ public class GameboardController : MonoBehaviour {
 		characterList.AddRange(GameObject.FindGameObjectsWithTag("P1"));
 		characterList.AddRange(GameObject.FindGameObjectsWithTag("P2"));
 		numCharacters = characterList.Count;
+
 		// Get 2 different index
 		int i = Random.Range (0, numCharacters);
 		int j = 0;
