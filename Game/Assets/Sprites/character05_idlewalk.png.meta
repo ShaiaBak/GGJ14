@@ -21,7 +21,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 1024
+  maxTextureSize: 4096
   textureSettings:
     filterMode: 0
     aniso: 1
@@ -50,108 +50,108 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: character05_idlewalk_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: character05_idlewalk_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: character05_idlewalk_3
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: character05_idlewalk_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: character05_idlewalk_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: character05_idlewalk_6
+      pivot: {x: 0, y: 0}
+    - name: character05_idlewalk_2
       rect:
         serializedVersion: 2
         x: 384
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: character05_idlewalk_7
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: character05_idlewalk_8
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-    - name: character05_idlewalk_9
+      pivot: {x: 0, y: 0}
+    - name: character05_idlewalk_3
       rect:
         serializedVersion: 2
         x: 576
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
+    - name: character05_idlewalk_4
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character05_idlewalk_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character05_idlewalk_6
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character05_idlewalk_7
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character05_idlewalk_8
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: character05_idlewalk_9
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 0
+        width: 192
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
     - name: character05_idlewalk_10
       rect:
         serializedVersion: 2
-        x: 640
+        x: 1920
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
     - name: character05_idlewalk_11
       rect:
         serializedVersion: 2
-        x: 704
+        x: 2112
         y: 0
-        width: 64
-        height: 64
+        width: 192
+        height: 192
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
