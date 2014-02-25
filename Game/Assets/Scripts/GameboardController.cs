@@ -7,7 +7,6 @@ public class GameboardController : MonoBehaviour {
 	private GameObject[,] tileArray;
 	public int width;
 	public int height;
-	private bool gameEnded = false;
 	public int winner = -1;
 	private int spMode = -1;
 	private int numCharacters;
@@ -343,9 +342,5 @@ public class GameboardController : MonoBehaviour {
 	public void characterDied() {
 		numCharacters--;
 	}
-
-//	public void EndGame(int player) {
-//		gameEnded = true;
-//		winner = player;
-//	}
+	
 }

@@ -97,6 +97,7 @@ public class CharacterClass : MonoBehaviour {
 		gameboard.GetTileAtCoordinate(transform.position.x, transform.position.y).GetComponent<TileClass>().entity = null;
 		nextTile.entity = null;
 		gameboard.characterDied();
+		renderer.sortingOrder = -20;
 
 		if(tag == "P1"){
 			gameboard.player1 = null;
