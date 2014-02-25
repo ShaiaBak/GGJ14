@@ -25,6 +25,8 @@ public class CharacterClass : MonoBehaviour {
 			currentTile = tc;
 			nextTile = tc;
 		}
+		// Set order in layer
+		renderer.sortingOrder = (int) transform.position.y * -2;
 	}
 	
 	// Update is called once per frame
@@ -83,6 +85,8 @@ public class CharacterClass : MonoBehaviour {
 			nextTile = tempNextTile;
 			currentTile.entity = null;
 			nextTile.entity = gameObject;
+			// Set order in layer
+			renderer.sortingOrder = (int) nextTile.transform.position.y * -2;
 		}
 	}
 
