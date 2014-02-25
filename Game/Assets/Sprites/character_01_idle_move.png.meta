@@ -52,8 +52,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_idle_move_1
       rect:
         serializedVersion: 2
@@ -61,8 +61,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_idle_move_2
       rect:
         serializedVersion: 2
@@ -70,8 +70,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_idle_move_3
       rect:
         serializedVersion: 2
@@ -79,8 +79,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_idle_move_4
       rect:
         serializedVersion: 2
@@ -88,8 +88,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_idle_move_5
       rect:
         serializedVersion: 2
@@ -97,7 +97,7 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
   spritePackingTag: 
   userData: 

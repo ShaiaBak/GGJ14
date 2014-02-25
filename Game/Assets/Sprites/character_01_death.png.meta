@@ -52,8 +52,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_1
       rect:
         serializedVersion: 2
@@ -61,8 +61,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_2
       rect:
         serializedVersion: 2
@@ -70,8 +70,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_3
       rect:
         serializedVersion: 2
@@ -79,8 +79,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_4
       rect:
         serializedVersion: 2
@@ -88,8 +88,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_5
       rect:
         serializedVersion: 2
@@ -97,8 +97,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_6
       rect:
         serializedVersion: 2
@@ -106,8 +106,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_7
       rect:
         serializedVersion: 2
@@ -115,8 +115,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_8
       rect:
         serializedVersion: 2
@@ -124,8 +124,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_9
       rect:
         serializedVersion: 2
@@ -133,8 +133,8 @@ TextureImporter:
         y: 192
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_10
       rect:
         serializedVersion: 2
@@ -142,8 +142,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_11
       rect:
         serializedVersion: 2
@@ -151,8 +151,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_12
       rect:
         serializedVersion: 2
@@ -160,8 +160,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
     - name: character_01_death_13
       rect:
         serializedVersion: 2
@@ -169,7 +169,7 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: .5, y: .400000006}
   spritePackingTag: 
   userData: 
