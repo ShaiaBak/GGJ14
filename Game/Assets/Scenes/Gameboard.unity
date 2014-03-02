@@ -250,10 +250,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   P1LockInObj: {fileID: 893069086}
   P2LockInObj: {fileID: 1741332942}
-  P1Waiting: {fileID: 2800000, guid: 5be902d24bb57784bb13fac7d8008992, type: 3}
-  P2Waiting: {fileID: 2800000, guid: b69c953b24dac674ab6bbd680d9652ec, type: 3}
-  P1Locked: {fileID: 2800000, guid: 7aae924fe99f73140b24beea1cc95bff, type: 3}
-  P2Locked: {fileID: 2800000, guid: 8dad5c023a1ddd44dac8f82f7c7fd2cc, type: 3}
+  P1Waiting: {fileID: 2800000, guid: 7198e918cd242024ea6d2d04de48fb59, type: 3}
+  P2Waiting: {fileID: 2800000, guid: ad816252a3338224fb5de86681c83bbe, type: 3}
+  P1Locked: {fileID: 2800000, guid: 41be8121345cf274eb0f07a8d26c474d, type: 3}
+  P2Locked: {fileID: 2800000, guid: 1f34ff32a313dd34a92dc74b3bc6be6b, type: 3}
 --- !u!114 &5226729
 MonoBehaviour:
   m_ObjectHideFlags: 0
