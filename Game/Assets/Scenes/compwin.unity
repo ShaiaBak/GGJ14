@@ -83,7 +83,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 436032695}
   - 33: {fileID: 436032694}
-  - 64: {fileID: 436032693}
   - 23: {fileID: 436032692}
   m_Layer: 0
   m_Name: Computer Win
@@ -113,19 +112,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &436032693
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 436032691}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &436032694
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -318,7 +304,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1744527917}
   - 33: {fileID: 1744527916}
-  - 64: {fileID: 1744527915}
   - 23: {fileID: 1744527914}
   - 114: {fileID: 1744527918}
   m_Layer: 0
@@ -349,19 +334,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &1744527915
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1744527913}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1744527916
 MeshFilter:
   m_ObjectHideFlags: 0

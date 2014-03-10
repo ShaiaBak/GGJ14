@@ -83,7 +83,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 260155734}
   - 33: {fileID: 260155737}
-  - 64: {fileID: 260155736}
   - 23: {fileID: 260155735}
   m_Layer: 0
   m_Name: Black
@@ -124,19 +123,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &260155736
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 260155733}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &260155737
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -205,7 +191,6 @@ GameObject:
   - 20: {fileID: 1652798213}
   - 92: {fileID: 1652798212}
   - 124: {fileID: 1652798211}
-  - 81: {fileID: 1652798210}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -213,13 +198,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1652798210
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1652798209}
-  m_Enabled: 1
 --- !u!124 &1652798211
 Behaviour:
   m_ObjectHideFlags: 0

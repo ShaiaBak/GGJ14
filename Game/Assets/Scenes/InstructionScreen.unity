@@ -83,7 +83,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 510782073}
   - 33: {fileID: 510782072}
-  - 64: {fileID: 510782071}
   - 23: {fileID: 510782070}
   - 114: {fileID: 510782074}
   m_Layer: 0
@@ -114,19 +113,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &510782071
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 510782069}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &510782072
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -167,7 +153,6 @@ GameObject:
   - 20: {fileID: 1414202246}
   - 92: {fileID: 1414202245}
   - 124: {fileID: 1414202244}
-  - 81: {fileID: 1414202243}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -175,13 +160,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1414202243
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1414202238}
-  m_Enabled: 0
 --- !u!124 &1414202244
 Behaviour:
   m_ObjectHideFlags: 0

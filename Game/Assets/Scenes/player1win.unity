@@ -327,7 +327,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 948704145}
   - 33: {fileID: 948704144}
-  - 64: {fileID: 948704143}
   - 23: {fileID: 948704142}
   - 114: {fileID: 948704146}
   m_Layer: 0
@@ -358,19 +357,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &948704143
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 948704141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &948704144
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -489,7 +475,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1813786857}
   - 33: {fileID: 1813786856}
-  - 64: {fileID: 1813786855}
   - 23: {fileID: 1813786854}
   m_Layer: 0
   m_Name: Player 1 Win
@@ -519,19 +504,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &1813786855
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1813786853}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1813786856
 MeshFilter:
   m_ObjectHideFlags: 0

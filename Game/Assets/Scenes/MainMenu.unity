@@ -114,7 +114,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 223065066}
   - 33: {fileID: 223065065}
-  - 64: {fileID: 223065064}
   - 23: {fileID: 223065063}
   m_Layer: 0
   m_Name: Title
@@ -144,19 +143,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &223065064
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 223065062}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &223065065
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -261,7 +247,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 645468193}
   - 33: {fileID: 645468197}
-  - 64: {fileID: 645468196}
   - 23: {fileID: 645468195}
   - 114: {fileID: 645468194}
   m_Layer: 0
@@ -314,19 +299,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &645468196
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 645468192}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &645468197
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -582,7 +554,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1845517203}
   - 33: {fileID: 1845517202}
-  - 64: {fileID: 1845517201}
   - 23: {fileID: 1845517200}
   m_Layer: 0
   m_Name: Start Button 2P
@@ -612,19 +583,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &1845517201
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1845517198}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1845517202
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -652,7 +610,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2071723233}
   - 33: {fileID: 2071723232}
-  - 64: {fileID: 2071723231}
   - 23: {fileID: 2071723230}
   m_Layer: 0
   m_Name: Start Button 1P
@@ -682,19 +639,6 @@ Renderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
---- !u!64 &2071723231
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2071723229}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_SmoothSphereCollisions: 0
-  m_Convex: 0
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &2071723232
 MeshFilter:
   m_ObjectHideFlags: 0
